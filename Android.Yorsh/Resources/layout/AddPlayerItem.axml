@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@android:color/transparent"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/AddPlayerItem_marginLeft"
+    android:paddingRight="@dimen/AddPlayerItem_marginRight"
+    android:paddingBottom="@dimen/AddPlayerItem_paddingBottom"
+    android:paddingTop="@dimen/AddPlayerItem_paddingTop">
+    <ImageView
+        android:id="@+id/playerImage"
+        android:src="@drawable/photo_default"
+        android:background="@drawable/round_rect_shape_white_border"
+        android:layout_width="@dimen/AddPlayerItem_imageSize"
+        android:layout_height="@dimen/AddPlayerItem_imageSize"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:paddingTop="6dp"
+        android:paddingRight="6dp"
+        android:paddingBottom="6dp"
+        android:paddingLeft="6dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop" />
+    <FrameLayout
+        android:id="@+id/removeLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true">
+        <ImageView
+            android:id="@+id/doneImage"
+            android:layout_width="@dimen/AddPlayerItem_removeLayoutSize"
+            android:layout_height="@dimen/AddPlayerItem_removeLayoutSize"
+            android:background="@android:color/transparent"
+            android:src="@drawable/done" />
+        <ImageButton
+            android:id="@+id/removeButton"
+            android:layout_width="@dimen/AddPlayerItem_removeLayoutSize"
+            android:layout_height="@dimen/AddPlayerItem_removeLayoutSize"
+            android:src="@drawable/delete_button"
+            android:background="@android:color/transparent"
+            android:scaleType="centerCrop" />
+    </FrameLayout>
+    <RelativeLayout
+        android:id="@+id/playerNameLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/playerImage"
+        android:layout_toLeftOf="@id/removeLayout"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5.0dp"
+        android:layout_marginRight="5.0dp">
+        <TextView
+            android:text="Default"
+            android:id="@+id/playerName"
+            android:gravity="top"
+            android:textColor="@color/name_black"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/AddPlayerItem_nameTextSize" />
+        <TextView
+            android:id="@+id/isPlayText"
+            android:text="Default"
+            android:layout_below="@id/playerName"
+            android:layout_width="fill_parent"
+            android:textSize="@dimen/AddPlayerItem_isPlayTextSize"
+            android:layout_height="wrap_content"
+            android:textColor="@drawable/ready_label_enable" />
+    </RelativeLayout>
+</RelativeLayout>

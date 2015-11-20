@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/game_background">
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="fill_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="@dimen/AddNewPlayers_padding"
+        android:layout_marginLeft="@dimen/AddNewPlayers_padding"
+        android:layout_height="@dimen/AddNewPlayers_buttonHeight"
+        android:layout_marginBottom="@dimen/ContentMarginTopBottom">
+        <View
+            android:id="@+id/TextView01"
+            android:layout_width="@dimen/AddNewPlayers_padding"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true" />
+        <Button
+            android:id="@+id/completeGameButton"
+            android:text="@string/NewGameString"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/ready_button"
+            android:layout_below="@id/TextView01"
+            android:layout_toLeftOf="@id/TextView01"
+            android:layout_alignParentTop="true"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/AddNewPlayers_buttonTextSize" />
+        <Button
+            android:id="@+id/shareButton"
+            android:text="@string/ShareString"
+            android:background="@drawable/shared"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/TextView01"
+            android:layout_alignParentTop="true"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/AddNewPlayers_buttonTextSize" />
+    </RelativeLayout>
+    <ListView
+        android:id="@+id/playerTournamentListView"
+        android:background="@drawable/round_rect_shape_white_background"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/relativeLayout"
+        android:layout_marginBottom="@dimen/ContentMarginTopBottom"
+        android:layout_marginTop="@dimen/ContentMarginTopBottom"
+        android:layout_marginLeft="@dimen/ContentMarginLeftRight"
+        android:layout_marginRight="@dimen/ContentMarginLeftRight" />
+</RelativeLayout>

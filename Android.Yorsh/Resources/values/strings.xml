@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="ApplicationName">Ёрш</string>
+
+  <!--Main Menu Strings-->
+  <string name="BoardGameString">НАСТОЛЬНАЯ ИГРА</string>
+  <string name="StartGameString">НАЧАТЬ ИГРУ</string>
+  <string name="RulesString">ПРАВИЛА</string>
+  <string name="PlusCardsString">+ЗАДАНИЯ</string>
+
+  <!--Dialog Box-->
+  <string name="GoToMosigraSite">Переход на сайт Мосигры</string>
+  <string name="OpenSiteQuestionString">Открыть страницу настольной версии игры?</string>
+  <string name="TheLongestTaskString">Позвони на случайный номер, представься командиром звёздного корабля и попроси разрешения на посадку. Не переставай звонить (можно на разные номера), пока не получишь разрешения.</string>
+  <string name="TheLongestBonusString">Придумай любому игроку прозвище. Все игроки до конца игры должны обращаться к нему и говорить о нём, используя это прозвище.</string>
+ 
+  <string name="RulesGameString">Правила игры</string>
+  <string name="BuyString">Покупки</string>
+  <string name="PlayersString">Кто играет?</string>
+  <string name="IsPlayString">Готов к игре</string>
+  <string name="IsNotPlayString">Не играет</string>
+  <string name="NoNameString">Нет имени</string>
+  <string name="PlayerNameString">Имя игрока</string>
+  <string name="ChooseFromContactString">ВЫБРАТЬ ИЗ КОНТАКТОВ</string>
+  <string name="AddNewPlayerLowCaseString">Добавить игрока</string>
+  <string name="AddNewPlayerString">ДОБАВИТЬ ИГРОКА</string>
+  <string name="StartGameButtonString">НАЧАТЬ ИГРУ</string>
+  <string name="MakePhotoString">Сделать фото</string>
+  <string name="GameString">Игра</string>
+  <string name="AreYouShureString">КОНЕЦ ИГРЫ?</string>
+  <string name="YesString">ДА</string>
+  <string name="NoString">НЕТ</string>
+  <string name="MakeThisString">ВЫПОЛНИТЬ</string>
+  <string name="RefuseString">ОТКАЗАТЬСЯ</string>
+  <string name="TournirTableString">Турнирная таблица</string>
+  <string name="ChooseFromGalleryString">Выбрать из галереи</string>
+  <string name="PositionPlayerString">Позиция игрока:\u0020</string>
+  <string name="ScoreString">очков трезвости</string>
+  <string name="PickPlayerString">Выбери игрока</string>
+  <string name="ContinueString">ПРОДОЛЖИТЬ</string>
+  <string name="NotSupportCameraString">На данном устройстве не включена поддержка камеры</string>
+  <string name="LeadString">ВЕДЁТ</string>
+  <string name="WinnerString">ПОБЕДИТЕЛЬ</string>
+  <string name="ScoresString">БАЛОВ</string>
+  <string name="CompleteGameString">ЗАВЕРШИТЬ ИГРУ</string>
+  <string name="NewGameString">НОВАЯ ИГРА</string>
+  <string name="ShareString">ПОДЕЛИТЬСЯ</string>
+  <string name="ResultsString">Результат игры</string>
+
+  <string name="AreYouLikeString">Понравилось?</string>
+  <string name="EstimateUsString">Оцени нас!</string>
+  <string name="EasyString">Легко!</string>
+  <string name="LaterString">Потом</string>
+  <string name="NoFunString">Неа, ик!</string>
+  <string name="CongratString">ПОЗДРАВЛЯЕМ</string>
+  <string name="YouHaveBonusString">ТЕБЕ ДОСТАЛСЯ БОНУС</string>
+  <string name="PleaseSelectThePlayerString">Выберете последнего, кто залез под стол</string>
+   <string name="PressReadyButtonString">Нажми ГОТОВО</string>
+  <!--Your device does not support this feature-->
+  <string name="CancelString">ОТМЕНА</string>
+  <string name="ConfirmString">ГОТОВО</string>
+
+</resources>

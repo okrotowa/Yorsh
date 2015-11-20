@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/transparent"
+    android:minWidth="@dimen/Dialog_MinWidth"
+    android:paddingTop="@dimen/Bonus_ContentPadding"
+    android:paddingBottom="@dimen/Bonus_ContentPadding">
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/taskprogress_background">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/light_top"
+            android:adjustViewBounds="true"
+            android:layout_marginTop="-15dp" />
+        <ImageView
+            android:id="@+id/light_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/light_bottom"
+            android:adjustViewBounds="true"
+            android:layout_marginBottom="-15dp" />
+        <TextView
+            android:id="@+id/statusTitleText"
+            android:text="ПОЗДРАВЛЯЕМ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/TaskProgress_MarginTop"
+            android:textSize="@dimen/TaskProgress_TitleTextSize"
+            android:layout_alignParentTop="true" />
+        <TextView
+            android:id="@+id/statusDescriptionText"
+            android:text="ЗАДАНИЕ УСПЕШНО ВЫПОЛНЕНО"
+            android:layout_below="@id/statusTitleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/TaskProgress_DescTextSize" />
+        <RelativeLayout
+            android:id="@+id/descLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="120dp"
+            android:layout_below="@id/statusDescriptionText"
+            android:layout_centerHorizontal="true"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/changeCountScoreText"
+                android:text="+ 2 очков"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textSize="@dimen/TaskProgress_CurrentScoreTextSize"
+                android:textColor="@color/task_progress_black" />
+            <TextView
+                android:id="@+id/endDescriptionText"
+                android:text="Зарабатывает Вася"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/task_progress_black"
+                android:layout_below="@id/changeCountScoreText"
+                android:textSize="@dimen/TaskProgress_EndDescTextSize" />
+        </RelativeLayout>
+        <ImageButton
+            android:id="@+id/continueButton"
+            android:layout_marginBottom="@dimen/Bonus_MarginBottom"
+            android:layout_width="@dimen/Bonus_ButtonWidth"
+            android:layout_height="@dimen/Bonus_ButtonHeight"
+            android:background="@drawable/bonus_button_selector"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+        <TextView
+            android:id="@+id/currentScoreText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:layout_above="@id/continueButton"
+            android:layout_below="@id/descLayout"
+            android:textColor="@color/task_progress_black"
+            android:text="Всего очков: 12"
+            android:textSize="@dimen/TaskProgress_CurrentScoreTextSize" />
+    </RelativeLayout>
+</RelativeLayout>

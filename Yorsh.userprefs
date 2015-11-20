@@ -1,0 +1,18 @@
+﻿<Properties StartupItem="Android.Yorsh\Android.Yorsh.csproj" RefactoringSettings.EnableRefactorings="True">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.Nexus 4 (KitKat) - API 17" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Android.Yorsh\Activities\ResultsGameActivity.cs">
+    <Files>
+      <File FileName="Android.Yorsh\Activities\ResultsGameActivity.cs" Line="41" Column="58" />
+      <File FileName="Android.Yorsh\Resources\drawable\circle_shape.xml" Line="1" Column="1" />
+      <File FileName="Android.Yorsh\Activities\SplashScreenActivity.cs" Line="1" Column="1" />
+      <File FileName="e:\Fionariza\Programming\Work\Yorsh\Android.Yorsh\Helpers\ActivityExtensions.cs" Line="1" Column="1" />
+      <File FileName="e:\Fionariza\Programming\Work\Yorsh\Android.Yorsh\Helpers\ListExtensions.cs" Line="1" Column="1" />
+      <File FileName="Android.Yorsh\Activities\RulesActivity.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.Android.Yorsh AndroidDesignerPreferredDevice="4.7&quot; WXGA" />
+</Properties>

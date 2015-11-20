@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-40dp"
+        android:clipToPadding="false"
+        android:clipChildren="false">
+        <FrameLayout
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/first_player"
+            android:layout_gravity="center_horizontal"
+            android:padding="20dp">
+            <ImageView
+                android:id="@+id/playerImage"
+                android:src="@drawable/icon"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:cropToPadding="true" />
+            <ImageView
+                android:id="@+id/circle_crop"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/circle_shape" />
+        </FrameLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal">
+            <TextView
+                android:id="@+id/leadText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ВЕДЕТ: "
+                android:textColor="@color/name_black" />
+            <TextView
+                android:id="@+id/playerName"
+                android:textColor="@color/bonus_green"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal">
+            <TextView
+                android:id="@+id/scoreText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/bonus_blue"
+                android:text="БАЛОВ: " />
+            <TextView
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/playerScore"
+                android:textColor="@color/bonus_blue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

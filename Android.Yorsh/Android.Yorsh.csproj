@@ -1,0 +1,465 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F3119760-AB95-4324-9D27-8548A167DE3C}</ProjectGuid>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Android.Yorsh</RootNamespace>
+    <AssemblyName>Android.Yorsh</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <AndroidApplication>true</AndroidApplication>
+    <AndroidResgenFile>Resources\Resource.Designer.cs</AndroidResgenFile>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <AndroidUseLatestPlatformSdk>False</AndroidUseLatestPlatformSdk>
+    <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
+    <TargetFrameworkVersion>v4.4</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidLinkMode>None</AndroidLinkMode>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidUseSharedRuntime>False</AndroidUseSharedRuntime>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <WarningLevel>4</WarningLevel>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Mono.Android" />
+    <Reference Include="mscorlib" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Xml" />
+    <Reference Include="SQLite">
+      <HintPath>..\Components\sqlite-net-1.0.8.3\lib\android\SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Mobile">
+      <HintPath>..\Components\xamarin.mobile-0.7.7\lib\android\Xamarin.Mobile.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Activities\AddNewPlayerActivity.cs" />
+    <Compile Include="Activities\BaseActivity.cs" />
+    <Compile Include="Activities\GameActivity.cs" />
+    <Compile Include="Activities\ImageActivity.cs" />
+    <Compile Include="Activities\MainMenuActivity.cs" />
+    <Compile Include="Activities\RulesActivity.cs" />
+    <Compile Include="Activities\AddPlayersActivity.cs" />
+    <Compile Include="Activities\StoreActivity.cs" />
+    <Compile Include="Activities\ResultsGameActivity.cs" />
+    <Compile Include="Animation\FlipAnimation.cs" />
+    <Compile Include="Fragments\ChoosePhotoDialog.cs" />
+    <Compile Include="Fragments\GameFragment.cs" />
+    <Compile Include="Fragments\ImageFragment.cs" />
+    <Compile Include="Fragments\PickPlayerDialog.cs" />
+    <Compile Include="Fragments\TaskProgressDialog.cs" />
+    <Compile Include="Helpers\ActivityExtensions.cs" />
+    <Compile Include="Helpers\BearTask.cs" />
+    <Compile Include="Helpers\BitmapLoadedEventArgs.cs" />
+    <Compile Include="Helpers\ListExtensions.cs" />
+    <Compile Include="Helpers\MakeTask.cs" />
+    <Compile Include="Helpers\RefuseAndMoveTask.cs" />
+    <Compile Include="Helpers\RefuseTask.cs" />
+    <Compile Include="Helpers\ResourceLoader.cs" />
+    <Compile Include="Helpers\TaskDialogBuilder.cs" />
+    <Compile Include="Model\BonusTable.cs" />
+    <Compile Include="Model\CategoryTable.cs" />
+    <Compile Include="Model\PlayerList.cs" />
+    <Compile Include="Model\Player.cs" />
+    <Compile Include="Model\Rep.cs" />
+    <Compile Include="Model\TaskList.cs" />
+    <Compile Include="Model\TaskTable.cs" />
+    <Compile Include="Properties\Annotations.cs" />
+    <Compile Include="Resources\Resource.Designer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Activities\SplashScreenActivity.cs">
+      <DeployService-Deploy>True</DeployService-Deploy>
+    </Compile>
+    <Compile Include="Activities\YourshApplication.cs" />
+    <Compile Include="Helpers\BitmapExtensions.cs" />
+    <Compile Include="Fragments\BonusDialog.cs" />
+    <Compile Include="Activities\ChoosePlayerActivity.cs" />
+    <Compile Include="Adapters\AddNewPlayerListAdapter.cs" />
+    <Compile Include="Adapters\PlayerListAdapter.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <AndroidAsset Include="Assets\Bonus.csv" />
+    <AndroidAsset Include="Assets\Category.csv" />
+    <AndroidAsset Include="Assets\Task.csv" />
+    <None Include="Resources\AboutResources.txt" />
+    <AndroidResource Include="Resources\layout\Rules.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\StartGame.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\Store.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\AddPlayers.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\ChoosePhoto.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\AddPlayerItem.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\PlayerInGameItem.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\ImageCard.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\TaskStatus.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\PickPlayerDialog.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\ResultsGame.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\PlayerItem.axml" />
+    <AndroidResource Include="Resources\layout\FirstPlayerItem.axml" />
+    <AndroidResource Include="Resources\drawable\splash.png" />
+    <AndroidResource Include="Resources\drawable-ldpi\logo.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\logo.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\logo.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\splash.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\logo.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\plus_tasks_button.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\rules_button.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\start_game_button.png" />
+    <AndroidResource Include="Resources\drawable\plus_tasks_button.png" />
+    <AndroidResource Include="Resources\drawable\rules_button.png" />
+    <AndroidResource Include="Resources\drawable\start_game_button.png" />
+    <AndroidResource Include="Resources\drawable\logo.png" />
+    <AndroidResource Include="Resources\drawable\background.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\background.png" />
+    <AndroidResource Include="Resources\drawable-ldpi\background.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\background.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\background.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\background.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\background.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\logo.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\logo.png" />
+    <AndroidAsset Include="Assets\MyriadProBoldCondensed.ttf" />
+    <AndroidResource Include="Resources\drawable-mdpi\plus_tasks_button.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\rules_button.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\start_game_button.png" />
+    <AndroidResource Include="Resources\drawable-ldpi\plus_tasks_button.png" />
+    <AndroidResource Include="Resources\drawable-ldpi\rules_button.png" />
+    <AndroidResource Include="Resources\drawable-ldpi\start_game_button.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\plus_tasks_button.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\rules_button.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\start_game_button.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\plus_tasks_button.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\rules_button.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\start_game_button.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\plus_tasks_button.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\rules_button.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\start_game_button.png" />
+    <AndroidResource Include="Resources\drawable\splash_screen.xml" />
+    <AndroidResource Include="Resources\layout\Splash.axml" />
+    <AndroidResource Include="Resources\layout\YorshActionBar.axml" />
+    <AndroidResource Include="Resources\drawable\home_button.xml" />
+    <AndroidResource Include="Resources\drawable-hdpi\back_button.png" />
+    <AndroidResource Include="Resources\drawable-ldpi\back_button.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\back_button.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\back_button.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\back_button.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\back_button.png" />
+    <AndroidResource Include="Resources\drawable-ldpi\add_new_player.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\add_new_player.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\add_new_player.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\add_new_player.png" />
+    <None Include="Resources\drawable-xxxhdpi\add_new_player.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\add_new_player.png" />
+    <AndroidResource Include="Resources\layout\YorshActionBarTournamentTable.axml" />
+    <AndroidResource Include="Resources\drawable-hdpi\game_background.png" />
+    <AndroidResource Include="Resources\drawable-ldpi\game_background.png" />
+    <AndroidResource Include="Resources\drawable-ldpi\splash.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\game_background.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\game_background.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\game_background.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\game_background.png" />
+    <AndroidResource Include="Resources\drawable\round_rect_shape_white_background.xml" />
+    <AndroidAsset Include="Assets\MyriadProBold.ttf" />
+    <AndroidAsset Include="Assets\MyriadProRegular.ttf" />
+    <AndroidResource Include="Resources\drawable-ldpi\delete_button.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\delete_button.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\delete_button.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\delete_button.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\delete_button.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\delete_button.png" />
+    <AndroidResource Include="Resources\drawable\delete_button.png" />
+    <AndroidResource Include="Resources\drawable\start_new_game_button.png" />
+    <AndroidResource Include="Resources\values\strings.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\drawable\photo_default.png" />
+    <AndroidResource Include="Resources\drawable\round_rect_shape_white_border.xml" />
+    <AndroidResource Include="Resources\drawable\choose_from_contacts.png" />
+    <AndroidResource Include="Resources\drawable-ldpi\cancel_button.png" />
+    <AndroidResource Include="Resources\drawable-ldpi\ready_button.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\cancel_button.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ready_button.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\cancel_button.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ready_button.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\cancel_button.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ready_button.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\cancel_button.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\ready_button.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\add_new_player.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\back_button.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\background.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\logo.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\plus_tasks_button.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\rules_button.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\splash.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\start_game_button.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\delete_button.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\cancel_button.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\ready_button.png" />
+    <AndroidResource Include="Resources\drawable\ready_button.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\cancel_button.png" />
+    <AndroidResource Include="Resources\drawable-nodpi\game_background.png" />
+    <AndroidAsset Include="Assets\BankirRetro.ttf" />
+    <AndroidResource Include="Resources\values\dimens.xml" />
+    <AndroidResource Include="Resources\values-large\dimens.xml" />
+    <AndroidResource Include="Resources\values-xlarge\dimens.xml" />
+    <AndroidResource Include="Resources\values\colors.xml" />
+    <AndroidResource Include="Resources\drawable-nodpi\card_backside.jpg" />
+    <AndroidAsset Include="Assets\MyriadProCondensed.ttf" />
+    <AndroidResource Include="Resources\drawable\back_button_pressed.xml" />
+    <AndroidResource Include="Resources\drawable\back_button_selector.xml" />
+    <AndroidResource Include="Resources\drawable\add_player_button_selector.xml" />
+    <AndroidResource Include="Resources\drawable\add_player_button_pressed.xml" />
+    <AndroidResource Include="Resources\layout\AddNewPlayer.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\drawable\points.png" />
+    <AndroidResource Include="Resources\drawable\x2.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\points.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\x2.png" />
+    <AndroidResource Include="Resources\drawable\iq_bg.jpg" />
+    <AndroidResource Include="Resources\drawable-hdpi\beer_icon_adblock.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\bg_shop.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\bonus.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\bonus_bg.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\confety.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\icon_center_all.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\icon_top_70.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\light_bottom.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\light_top.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ready_button.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\rgb_star.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\sale_20.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\shadow.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\star_1_copy_2_star_1_copy_3_20_copy.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\beer_icon_adblock.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\bg_shop.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\bonus.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\bonus_bg.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\confety.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\icon_center_all.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\icon_top_70.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\light_bottom.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\light_top.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\points.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\rgb_star.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\sale_20.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\shadow.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\star_1_copy_2_star_1_copy_3_20_copy.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\x2.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\beer_icon_adblock.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\bg_shop.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\bonus.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\bonus_bg.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\confety.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\icon_center_all.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\icon_top_70.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\light_bottom.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\light_top.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\points.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\rgb_star.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\sale_20.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\shadow.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\star_1_copy_2_star_1_copy_3_20_copy.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\x2.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\beer_icon_adblock.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\bg_shop.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\bonus.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\bonus_bg.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\confety.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\icon_center_all.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\icon_top_70.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\light_bottom.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\light_top.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\points.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\rgb_star.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\sale_20.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\shadow.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\star_1_copy_2_star_1_copy_3_20_copy.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\x2.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\beer_icon_adblock.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\bg_shop.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\bonus.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\bonus_bg.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\confety.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\icon_center_all.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\icon_top_70.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\light_bottom.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\light_top.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\points.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\rgb_star.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\sale_20.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\shadow.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\star_1_copy_2_star_1_copy_3_20_copy.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\x2.png" />
+    <AndroidResource Include="Resources\layout\Bonus.axml" />
+    <AndroidResource Include="Resources\drawable\bonus_button_selector.xml" />
+    <AndroidResource Include="Resources\drawable-hdpi\continue_pressed.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\continue_pressed.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\continue_pressed.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\continue_pressed.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\continue_pressed.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\continue_button.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\continue_button.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\continue_button.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\continue_button.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\continue_button.png" />
+    <AndroidAsset Include="Assets\MyriadProSemiboldCond.otf" />
+    <AndroidResource Include="Resources\values\arrays.xml" />
+    <AndroidAsset Include="Assets\MyriadProLightCond.otf" />
+    <AndroidResource Include="Resources\drawable\taskprogress_background.xml" />
+    <AndroidResource Include="Resources\drawable\ready_label_enable.xml" />
+    <AndroidResource Include="Resources\layout\ChoosePlayer.axml" />
+    <AndroidResource Include="Resources\layout\ChoosePlayerItem.axml" />
+    <AndroidResource Include="Resources\drawable\done.png" />
+    <AndroidResource Include="Resources\drawable\round_rect_shape_grey_background.xml" />
+    <AndroidResource Include="Resources\drawable\shared.png" />
+    <AndroidResource Include="Resources\drawable\add_new_player.png" />
+    <AndroidResource Include="Resources\drawable\cancel_button.png" />
+    <AndroidResource Include="Resources\drawable\card_backside.jpg" />
+    <AndroidResource Include="Resources\drawable\first_player.png" />
+    <AndroidResource Include="Resources\drawable\circle_shape.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\MainMenu.axml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\table_button.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <EmbeddedResource Include="Assets\cards\iq_bg_DF.jpg" />
+    <EmbeddedResource Include="Assets\cards\выпить_bg_DF.jpg" />
+    <EmbeddedResource Include="Assets\cards\координация_bg_DF.jpg" />
+    <EmbeddedResource Include="Assets\cards\медведь_bg_DF.jpg" />
+    <EmbeddedResource Include="Assets\cards\неприятное_bg_DF.jpg" />
+    <EmbeddedResource Include="Assets\cards\обмен_bg_DF.jpg" />
+    <EmbeddedResource Include="Assets\cards\приколы_bg_DF.jpg" />
+    <EmbeddedResource Include="Assets\cards\рисунок_bg_DF.jpg" />
+    <EmbeddedResource Include="Assets\cards\скороговорка_bg_DF.jpg" />
+    <EmbeddedResource Include="Assets\cards\смс_bg_DF.jpg" />
+    <EmbeddedResource Include="Assets\cards\тост_bg_DF.jpg" />
+    <EmbeddedResource Include="Assets\cards\физическое_bg_DF.jpg" />
+    <EmbeddedResource Include="Assets\cards\фото_bg_DF.jpg" />
+    <EmbeddedResource Include="Assets\cards\iq_bg_NY.jpg" />
+    <EmbeddedResource Include="Assets\cards\выпить_bg_NY.jpg" />
+    <EmbeddedResource Include="Assets\cards\координация_bg_NY.jpg" />
+    <EmbeddedResource Include="Assets\cards\медведь_bg_NY.jpg" />
+    <EmbeddedResource Include="Assets\cards\неприятное_bg_NY.jpg" />
+    <EmbeddedResource Include="Assets\cards\обмен_bg_NY.jpg" />
+    <EmbeddedResource Include="Assets\cards\приколы_bg_NY.jpg" />
+    <EmbeddedResource Include="Assets\cards\рисунок_bg_NY.jpg" />
+    <EmbeddedResource Include="Assets\cards\смс_bg_NY.jpg" />
+    <EmbeddedResource Include="Assets\cards\тост_bg_NY.jpg" />
+    <EmbeddedResource Include="Assets\cards\фото_bg_NY.jpg" />
+    <EmbeddedResource Include="Assets\cards\скороговорка_bg_NY.jpg" />
+    <EmbeddedResource Include="Assets\cards\физическое_bg_NY.jpg" />
+    <Content Include="Properties\AndroidManifest.xml">
+      <SubType>Designer</SubType>
+      <DeployService-Deploy>True</DeployService-Deploy>
+    </Content>
+    <AndroidResource Include="Resources\drawable\back_button.png" />
+    <AndroidResource Include="Resources\values\styles.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\drawable\add_player_button.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Adapters\" />
+    <Folder Include="Data\" />
+    <Folder Include="Resources\drawable-hdpi\" />
+    <Folder Include="Resources\drawable-mdpi\" />
+    <Folder Include="Resources\drawable-xxhdpi\" />
+    <Folder Include="Resources\drawable-xxxhdpi\" />
+    <Folder Include="Resources\drawable-xhdpi\" />
+    <Folder Include="Resources\drawable-ldpi\" />
+    <Folder Include="Resources\menu\" />
+    <Folder Include="Resources\values-large\" />
+    <Folder Include="Resources\drawable-nodpi\" />
+    <Folder Include="Resources\values-xlarge\" />
+  </ItemGroup>
+  <ItemGroup>
+    <XamarinComponentReference Include="sqlite-net">
+      <Version>1.0.8.3</Version>
+      <Visible>False</Visible>
+    </XamarinComponentReference>
+    <XamarinComponentReference Include="xamarin.mobile">
+      <Version>0.7.7</Version>
+      <Visible>False</Visible>
+    </XamarinComponentReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+     Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

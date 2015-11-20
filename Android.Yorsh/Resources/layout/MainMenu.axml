@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background">
+    <LinearLayout
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/logoImage"
+            android:layout_height="@dimen/MainMenu_logoSize"
+            android:layout_width="@dimen/MainMenu_logoSize"
+            android:src="@drawable/logo"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:layout_marginRight="0.0dp" />
+        <TextView
+            android:id="@+id/BoardGame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/BoardGameString"
+            android:textColor="@android:color/white"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/MainMenu_linkMarginTop"
+            android:layout_marginBottom="@dimen/MainMenu_linkMarginBottom"
+            android:autoLink="web"
+            android:textColorLink="@android:color/white"
+            android:linksClickable="true"
+            android:textStyle="bold"
+            android:textSize="@dimen/MainMenu_linkSize" />
+    <!--Buttons-->
+        <RelativeLayout
+            android:layout_width="@dimen/MainMenu_startButtonWidth"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+            <Button
+                android:id="@+id/StartGame"
+                android:text="@string/StartGameString"
+                android:layout_height="@dimen/MainMenu_startButtonHeight"
+                android:background="@drawable/start_game_button"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/MainMenu_startButtonTextSize"
+                android:layout_width="fill_parent"
+                android:layout_marginBottom="@dimen/MainMenu_startButtonMarginBottom" />
+            <Button
+                android:id="@+id/Rules"
+                android:layout_width="@dimen/MainMenu_plusTaskButtonWidth"
+                android:layout_height="@dimen/MainMenu_plusTaskButtonHeight"
+                android:text="@string/RulesString"
+                android:background="@drawable/rules_button"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/MainMenu_plusTaskButtonTextSize"
+                android:layout_below="@id/StartGame"
+                android:layout_alignParentLeft="true" />
+            <Button
+                android:id="@+id/PlusCards"
+                android:layout_width="@dimen/MainMenu_plusTaskButtonWidth"
+                android:layout_height="@dimen/MainMenu_plusTaskButtonHeight"
+                android:text="@string/PlusCardsString"
+                android:background="@drawable/plus_tasks_button"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/MainMenu_plusTaskButtonTextSize"
+                android:layout_below="@id/StartGame"
+                android:layout_alignParentRight="true" />
+        </RelativeLayout>
+    </LinearLayout>
+<!-- Property Change Conflict | source:sw600dp, id:@+id/BoardGame | textColorLink=@android:color/white -->
+</RelativeLayout>

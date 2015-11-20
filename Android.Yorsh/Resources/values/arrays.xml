@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<resources>
+	<string-array name="Refuse">
+		  <item>ВЫ ОТКАЗАЛИСЬ</item>
+		  <item>ПЕРЕХОД ХОДА</item>
+		  <item>x2 очков</item>
+		  <item>Очки за задание удваиваются</item>
+		  <item>Очков на кону:\u0020</item>
+	</string-array>
+	<string-array name="RefuseAndMove">
+		  <item>ВЫ ОТКАЗАЛИСЬ</item>
+		  <item>ПЕРЕХОД ХОДА</item>
+		  <item>0 очков</item>
+		  <item>Зарабатывает\u0020</item>
+		  <item>Всего очков:\u0020</item>
+	</string-array>
+	<string-array name="MakeThis">
+		  <item>ПОЗДРАВЛЯЕМ</item>
+		  <item>ЗАДАНИЕ УСПЕШНО ВЫПОЛНЕНО</item>
+		  <item>+ {0} очков</item>
+		  <item>Зарабатывает\u0020</item>
+		  <item>Всего очков:\u0020</item>
+	</string-array>
+		<string-array name="Bear">
+		  <item>НE ПОВЕЗЛО:(</item>
+		  <item>МЕДВЕД ЗАБРАЛ ОЧКИ! И ПЕНСНЕ!</item>
+		  <item>5 очков</item>
+		  <item>Отнимается у\u0020</item>
+		  <item>Всего очков:\u0020</item>
+	</string-array>
+</resources>

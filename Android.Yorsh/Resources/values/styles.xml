@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+  <style name="Theme.WithoutActionBar" parent="android:Theme">
+        <item name="android:windowNoTitle">true</item>
+  </style>
+  <style name="Theme.AppTheme" parent="android:Theme.Holo">
+    <item name="android:homeAsUpIndicator">@drawable/back_button_selector</item>
+    <item name="android:actionBarStyle">@style/WhiteActionBar</item>
+	</style>
+    <style name="WhiteActionBar" parent="@android:style/Widget.Holo.Light.ActionBar">
+        <item name="android:background">#ffffff</item>
+        <item name="android:height">@dimen/ActionBar_Size</item>
+    </style>
+    <style name="YourshDialog" parent="@android:style/Theme.Holo.Light" >
+	    <item name="android:windowBackground">@null</item>
+	    <item name="android:windowIsFloating">true</item>
+	</style>
+</resources>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/game_background">
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_rect_shape_white_background"
+        android:padding="@dimen/AddNewPlayers_padding"
+        android:layout_margin="@dimen/AddNewPlayers_padding">
+        <RelativeLayout
+            android:id="@+id/playerLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <ImageButton
+                android:id="@+id/playerImage"
+                android:src="@drawable/photo_default"
+                android:background="@android:color/transparent"
+                android:layout_width="@dimen/AddNewPlayers_imageSize"
+                android:layout_height="@dimen/AddNewPlayers_imageSize"
+                android:scaleType="centerCrop" />
+            <EditText
+                android:id="@+id/playerName"
+                android:hint="@string/PlayerNameString"
+                android:background="@drawable/round_rect_shape_white_border"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:layout_toRightOf="@id/playerImage"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:textStyle="italic"
+                android:paddingTop="@dimen/AddNewPlayers_editTextPadding"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:textSize="@dimen/AddNewPlayers_editTextSize"
+                android:paddingBottom="@dimen/AddNewPlayers_editTextPadding"
+                android:textColor="@color/position_gray" />
+        </RelativeLayout>
+        <Button
+            android:id="@+id/chooseFromContButton"
+            android:text="@string/ChooseFromContactString"
+            android:background="@drawable/choose_from_contacts"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/AddNewPlayers_buttonHeight"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/playerLayout"
+            android:layout_marginTop="@dimen/AddNewPlayers_padding"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/AddNewPlayers_buttonTextSize" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="@dimen/AddNewPlayers_padding"
+        android:layout_marginLeft="@dimen/AddNewPlayers_padding"
+        android:layout_height="@dimen/AddNewPlayers_buttonHeight">
+        <View
+            android:id="@+id/TextView01"
+            android:layout_width="@dimen/AddNewPlayers_padding"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true" />
+        <Button
+            android:id="@+id/cancelButton"
+            android:text="@string/CancelString"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/cancel_button"
+            android:layout_below="@id/TextView01"
+            android:layout_toLeftOf="@id/TextView01"
+            android:layout_alignParentTop="true"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/AddNewPlayers_buttonTextSize" />
+        <Button
+            android:id="@+id/confirmButton"
+            android:text="@string/ConfirmString"
+            android:background="@drawable/ready_button"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/TextView01"
+            android:layout_alignParentTop="true"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/AddNewPlayers_buttonTextSize" />
+    </RelativeLayout>
+</LinearLayout>

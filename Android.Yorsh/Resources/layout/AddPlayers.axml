@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/game_background">
+    <Button
+        android:id="@+id/startPlayButton"
+        android:layout_width="@dimen/PlayersList_buttonWidth"
+        android:background="@drawable/start_game_button"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/ContentMarginTopBottom"
+        android:layout_marginRight="@dimen/ContentMarginLeftRight"
+        android:layout_marginLeft="@dimen/ContentMarginLeftRight"
+        android:layout_centerInParent="true"
+        android:layout_height="@dimen/PlayersList_buttonHeight"
+        android:textSize="@dimen/PlayersList_buttonTextSize" />
+    <ListView
+        android:id="@+id/playersList"
+        android:background="@drawable/round_rect_shape_white_background"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/startPlayButton"
+        android:layout_marginBottom="@dimen/ContentMarginTopBottom"
+        android:layout_marginTop="@dimen/ContentMarginTopBottom"
+        android:layout_marginLeft="@dimen/ContentMarginLeftRight"
+        android:layout_marginRight="@dimen/ContentMarginLeftRight" />
+</RelativeLayout>

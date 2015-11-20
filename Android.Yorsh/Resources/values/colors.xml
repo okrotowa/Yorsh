@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<resources>
+	 <color name="bonus_blue">#349FDC</color>
+	 <color name="bonus_green">#13bf5b</color>
+	 <color name="tournament_green">#38C771</color>
+	 <color name="task_progress_bg">#D93a2f4f</color>
+	 <color name="task_progress_green">#2c7a44</color>
+	 <color name="task_progress_black">#4a4a4a</color>
+	 <color name="task_progress_red">#f6542e</color>
+	 <color name="black">#000000</color>
+	 <color name="white">#ffffff</color>
+	 <color name="bonus_bg">#84110626</color>
+	 <color name="pressed_text_color">#80ffffff</color>
+	 <color name="position_gray">#969598</color>
+	 <color name="name_black">#110626</color>
+	 <color name="button_text_disabled">#80343232</color>
+	 <color name="button_disabled">#80343232</color>
+	 <color name="button_shadow_gray">#80666362</color>
+	 <color name="button_shadow_gray_text">#90897F</color>
+</resources>

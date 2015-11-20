@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/game_background"
+    android:padding="@dimen/Bonus_ContentPadding"
+    android:minWidth="@dimen/Dialog_MinWidth">
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_height="@dimen/Bonus_ImageHeight"
+        android:src="@drawable/bonus"
+        android:layout_centerHorizontal="true"
+        android:layout_width="@dimen/Bonus_ImageWidth" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/Bonus_CongratsTextSize"
+        android:text="@string/CongratString"
+        android:textColor="@color/white"
+        android:layout_below="@id/imageView"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/congrats"
+        android:layout_marginTop="-5dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/Bonus_YouWonBonusTextSize"
+        android:text="@string/YouHaveBonusString"
+        android:textColor="@color/white"
+        android:layout_below="@id/congrats"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/youHaveBonus" />
+    <ImageButton
+        android:id="@+id/continueButton"
+        android:layout_marginBottom="@dimen/TaskProgress_MarginBottom"
+        android:layout_width="@dimen/Bonus_ButtonWidth"
+        android:layout_height="@dimen/Bonus_ButtonHeight"
+        android:background="@drawable/bonus_button_selector"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/Bonus_BonusNameTextSize"
+        android:textColor="@color/white"
+        android:id="@+id/bonusText"
+        android:gravity="center"
+        android:layout_below="@id/youHaveBonus"
+        android:layout_above="@id/continueButton"
+        android:text="@string/TheLongestBonusString" />
+</RelativeLayout>

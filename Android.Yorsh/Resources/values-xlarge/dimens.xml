@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<dimen name="RoundedCorners">20px</dimen>
+	<dimen name="ActionBar_TitleSize">30sp</dimen>
+	<dimen name="ActionBar_Size">100dp</dimen>
+	<dimen name="Dialog_MinWidth">700dp</dimen>
+	<dimen name="ContentMarginLeftRight">45dp</dimen>
+	<dimen name="ContentMarginTopBottom">45dp</dimen>
+
+	<dimen name="MainMenu_logoSize">300dp</dimen>
+	<dimen name="MainMenu_linkSize">33sp</dimen>
+	<dimen name="MainMenu_linkMarginTop">40dp</dimen>
+	<dimen name="MainMenu_linkMarginBottom">18dp</dimen>
+	<dimen name="MainMenu_startButtonTextSize">55sp</dimen>
+	<dimen name="MainMenu_startButtonWidth">600dp</dimen>
+	<dimen name="MainMenu_startButtonHeight">160dp</dimen>
+	<dimen name="MainMenu_startButtonMarginBottom">10dp</dimen>
+	<dimen name="MainMenu_plusTaskButtonWidth">295dp</dimen>
+	<dimen name="MainMenu_plusTaskButtonHeight">120dp</dimen>
+	<dimen name="MainMenu_plusTaskButtonTextSize">45sp</dimen>
+
+	<dimen name="AddPlayerItem_marginLeft">30dp</dimen>
+    <dimen name="AddPlayerItem_marginRight">30dp</dimen>
+    <dimen name="AddPlayerItem_paddingBottom">20dp</dimen>
+    <dimen name="AddPlayerItem_paddingTop">20dp</dimen>
+    <dimen name="AddPlayerItem_imageSize">100dp</dimen>
+    <dimen name="AddPlayerItem_removeLayoutSize">50dp</dimen>
+    <dimen name="AddPlayerItem_nameTextSize">26sp</dimen>
+    <dimen name="AddPlayerItem_isPlayTextSize">23sp</dimen>
+
+    <dimen name="AddNewPlayers_editTextSize">35sp</dimen>
+    <dimen name="AddNewPlayers_buttonTextSize">47sp</dimen>
+    <dimen name="AddNewPlayers_imageSize">140dp</dimen>
+    <dimen name="AddNewPlayers_buttonHeight">120dp</dimen>
+    <dimen name="AddNewPlayers_padding">25dp</dimen>
+    <dimen name="AddNewPlayers_editTextPadding">25dp</dimen>
+
+    <dimen name="ImageCard_MarginBottom">60dp</dimen>
+    <dimen name="ImageCard_TextSize">30sp</dimen>
+    <dimen name="ImageCard_TextPadding">20dp</dimen>
+    <dimen name="ImageCard_TextHeight">280dp</dimen>
+
+    <dimen name="PlayersList_buttonHeight">140dp</dimen>
+	<dimen name="PlayersList_buttonWidth">480dp</dimen>
+    <dimen name="PlayersList_buttonTextSize">50sp</dimen>
+
+    <dimen name="Game_ContentPaddingLeftRight">45dp</dimen>
+    <dimen name="Game_ContentPaddingTopBottom">45dp</dimen>
+    <dimen name="Game_TopBarHeight">150dp</dimen>
+    <dimen name="Game_TopBarImageSize">100dp</dimen>
+    <dimen name="Game_TopBarMargin">20dp</dimen>
+    <dimen name="Game_TopBarCountScoreTextSize">44sp</dimen>
+    <dimen name="Game_TopBarScoreTextSize">33sp</dimen>
+    <dimen name="Game_TopBarTextMargin">20dp</dimen>
+    <dimen name="Game_TopBarPlayerNameTextSize">30sp</dimen>
+    <dimen name="Game_TopBarPlayerPositionTextSize">20sp</dimen>
+    <dimen name="Game_CardButtonHeight">520dp</dimen>
+    <dimen name="Game_CardButtonWidth">378dp</dimen>
+    <dimen name="Game_BottomButtonWidth">260dp</dimen>
+    <dimen name="Game_BottomButtonHeight">100dp</dimen>
+    <dimen name="Game_BottomButtonLeftRightMargin">20dp</dimen>
+    <dimen name="Game_BottomButtonTextSize">38sp</dimen>
+    <dimen name="Game_PointsLayoutHeight">140dp</dimen>
+    <dimen name="Game_PointsSize">90dp</dimen>
+    <dimen name="Game_PointsTextSize">35sp</dimen>
+    <dimen name="Game_x2Size">80dp</dimen>
+    <dimen name="Game_x2TextSize">30sp</dimen>
+
+    <dimen name="Bonus_ContentPadding">50dp</dimen>
+    <dimen name="Bonus_ImageHeight">470dp</dimen>
+    <dimen name="Bonus_ImageWidth">325dp</dimen>
+    <dimen name="Bonus_MarginBottom">25dp</dimen>
+    <dimen name="Bonus_CongratsTextSize">50sp</dimen>
+    <dimen name="Bonus_YouWonBonusTextSize">27sp</dimen>
+    <dimen name="Bonus_BonusNameTextWidth">500dp</dimen>
+    <dimen name="Bonus_BonusNameTextSize">44sp</dimen>
+    <dimen name="Bonus_ButtonWidth">340dp</dimen>
+    <dimen name="Bonus_ButtonHeight">120dp</dimen>
+
+    <dimen name="TaskProgress_MarginTop">200dp</dimen>
+	<dimen name="TaskProgress_MarginBottom">25dp</dimen>
+    <dimen name="TaskProgress_TitleTextSize">49sp</dimen>
+    <dimen name="TaskProgress_DescTextSize">36sp</dimen>
+    <dimen name="TaskProgress_ContinueButtonHeight">100dp</dimen>
+    <dimen name="TaskProgress_ContinueButtonWidth">315dp</dimen>
+    <dimen name="TaskProgress_ScoreLayoutHeight">240dp</dimen>
+    <dimen name="TaskProgress_CurrentScoreTextSize">38sp</dimen>
+    <dimen name="TaskProgress_EndDescTextSize">36sp</dimen>
+</resources>

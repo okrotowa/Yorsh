@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <ListView
+        android:id="@+id/playerList"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="@dimen/ContentMarginTopBottom"
+        android:layout_marginTop="@dimen/ContentMarginTopBottom"
+        android:layout_marginLeft="@dimen/ContentMarginLeftRight"
+        android:layout_marginRight="@dimen/ContentMarginLeftRight"
+        android:background="@drawable/round_rect_shape_white_background" />
+</LinearLayout>
