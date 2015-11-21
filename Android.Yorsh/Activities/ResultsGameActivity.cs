@@ -10,7 +10,7 @@ using Android.Yorsh.Model;
 using Android.Content.PM;
 namespace Android.Yorsh.Activities
 {
-	[Activity(Label = "@string/ResultsString",MainLauncher = true, ParentActivity = typeof(GameActivity),ScreenOrientation = ScreenOrientation.Portrait)]
+	[Activity(Label = "@string/ResultsString",MainLauncher = false, ParentActivity = typeof(GameActivity),ScreenOrientation = ScreenOrientation.Portrait)]
     public class ResultsGameActivity : BaseActivity
     {
         protected async override void OnCreate(Bundle bundle)

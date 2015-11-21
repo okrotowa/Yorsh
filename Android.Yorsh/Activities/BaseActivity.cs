@@ -9,7 +9,7 @@ using Android.Graphics;
 namespace Android.Yorsh.Activities
 {
 	[Activity]
-    public abstract class BaseActivity : Activity
+	public abstract class BaseActivity : Android.Support.V4.App.FragmentActivity
     {
 		View _actionButton = null;
 

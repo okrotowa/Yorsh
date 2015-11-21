@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/game_background"
+    android:minWidth="25px"
+    android:minHeight="25px">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="359.3dp"
+        android:background="@drawable/round_rect_shape_white_background"
+        android:padding="20dp"
+        android:layout_marginBottom="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:minWidth="25px"
+        android:minHeight="25px">
+        <ImageView
+            android:src="@drawable/rules_two_page"
+            android:layout_width="match_parent"
+            android:layout_height="149.3dp"
+            android:id="@+id/imageBackgroundRules"
+            android:scaleType="fitStart"
+            android:layout_marginBottom="0.0dp"
+            android:layout_gravity="center" />
+        <TextView
+            android:text="Как играть-то?"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/textHeader"
+            android:textAlignment="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignWithParentIfMissing="false"
+            android:layout_centerVertical="true"
+            android:shadowColor="#ff3e2723"
+            android:typeface="monospace"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_gravity="left"
+            android:textColor="@color/name_black"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp" />
+        <TextView
+            android:text="Теперь начните выполнять задания: прочитай своё вслух, а затем сделай, что написано. Не можешь - выпей штрафную. Затем передай телефон или планшет своему соседу справа, пусть он выполняет другое задание."
+            android:layout_width="match_parent"
+            android:layout_height="161.3dp"
+            android:id="@+id/textContainer"
+            android:textColor="@color/name_black"
+            android:typeface="normal"
+            android:textSize="12sp"
+            android:layout_marginBottom="@dimen/Bonus_MarginBottom"
+            android:layout_marginTop="0.0dp"
+            android:layout_gravity="left" />
+    </LinearLayout>
+    <ImageView
+        android:src="@drawable/rules_two_sroll_page"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageScroll"
+        android:paddingTop="0dp"
+        android:paddingBottom="10dp" />
+</LinearLayout>

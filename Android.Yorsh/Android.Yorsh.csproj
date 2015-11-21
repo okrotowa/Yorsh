@@ -65,11 +65,14 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Xml" />
+    <Reference Include="Xamarin.Mobile">
+      <HintPath>..\Components\xamarin.mobile-0.7.7\lib\android\Xamarin.Mobile.dll</HintPath>
+    </Reference>
     <Reference Include="SQLite">
       <HintPath>..\Components\sqlite-net-1.0.8.3\lib\android\SQLite.dll</HintPath>
     </Reference>
-    <Reference Include="Xamarin.Mobile">
-      <HintPath>..\Components\xamarin.mobile-0.7.7\lib\android\Xamarin.Mobile.dll</HintPath>
+    <Reference Include="Xamarin.Android.Support.v4">
+      <HintPath>..\Components\xamandroidsupportv4-18-4.19.0.1\lib\android\Xamarin.Android.Support.v4.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -116,6 +119,8 @@
     <Compile Include="Activities\ChoosePlayerActivity.cs" />
     <Compile Include="Adapters\AddNewPlayerListAdapter.cs" />
     <Compile Include="Adapters\PlayerListAdapter.cs" />
+    <Compile Include="Activities\GenericFragmentPagerAdapter.cs" />
+    <Compile Include="Activities\Fragments.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -220,7 +225,6 @@
     <AndroidResource Include="Resources\drawable-xhdpi\game_background.png" />
     <AndroidResource Include="Resources\drawable-xxhdpi\game_background.png" />
     <AndroidResource Include="Resources\drawable-xxxhdpi\game_background.png" />
-    <AndroidResource Include="Resources\drawable\round_rect_shape_white_background.xml" />
     <AndroidAsset Include="Assets\MyriadProBold.ttf" />
     <AndroidAsset Include="Assets\MyriadProRegular.ttf" />
     <AndroidResource Include="Resources\drawable-ldpi\delete_button.png" />
@@ -381,6 +385,17 @@
     <AndroidResource Include="Resources\drawable\card_backside.jpg" />
     <AndroidResource Include="Resources\drawable\first_player.png" />
     <AndroidResource Include="Resources\drawable\circle_shape.xml" />
+    <AndroidResource Include="Resources\layout\FragmentOne.axml" />
+    <AndroidResource Include="Resources\layout\FragmentTwo.axml" />
+    <AndroidResource Include="Resources\layout\FragmentThree.axml" />
+    <AndroidResource Include="Resources\drawable\rules_one_sroll_page.png" />
+    <AndroidResource Include="Resources\drawable\round_rect_shape_white_background.xml" />
+    <AndroidResource Include="Resources\drawable\game_background.png" />
+    <AndroidResource Include="Resources\drawable\rules_two_page.png" />
+    <AndroidResource Include="Resources\drawable\rules_three_page.png" />
+    <AndroidResource Include="Resources\drawable\rules_two_sroll_page.png" />
+    <AndroidResource Include="Resources\drawable\rules_three_sroll_page.png" />
+    <AndroidResource Include="Resources\drawable\rules_one_page.png" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\MainMenu.axml" />
@@ -451,6 +466,10 @@
     </XamarinComponentReference>
     <XamarinComponentReference Include="xamarin.mobile">
       <Version>0.7.7</Version>
+      <Visible>False</Visible>
+    </XamarinComponentReference>
+    <XamarinComponentReference Include="xamandroidsupportv4-18">
+      <Version>4.19.0.1</Version>
       <Visible>False</Visible>
     </XamarinComponentReference>
   </ItemGroup>

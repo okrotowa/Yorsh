@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/game_background"
+    android:minWidth="25px"
+    android:minHeight="25px">
+    <ImageView
+        android:src="@drawable/rules_one_sroll_page"
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageScroll"
+        android:paddingTop="0dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/RuleFragment_ScrollImageMarginBottom" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/imageScroll"
+        android:background="@drawable/round_rect_shape_white_background"
+        android:layout_marginBottom="@dimen/RuleFragment_LayoutMarginBottom"
+        android:layout_marginTop="@dimen/RuleFragment_LayoutMarginTop"
+        android:layout_marginLeft="@dimen/RuleFragment_LayoutMarginLeftRight"
+        android:layout_marginRight="@dimen/RuleFragment_LayoutMarginLeftRight"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:id="@+id/linearLayout1"
+        android:paddingTop="@dimen/RuleFragment_LayoutPadding"
+        android:paddingRight="@dimen/RuleFragment_LayoutPadding"
+        android:paddingLeft="@dimen/RuleFragment_LayoutPadding">
+        <ImageView
+            android:src="@drawable/rules_one_page"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/RuleFragment_ImageViewHeight"
+            android:id="@+id/imageBackgroundRules"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center" />
+        <TextView
+            android:text="Коротко об игре"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/textHeader"
+            android:textAlignment="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/RuleFragment_HeaderTextSize"
+            android:layout_gravity="left"
+            android:textColor="@color/name_black"
+            android:layout_marginTop="@dimen/RuleFragment_HeaderTextMarginTopBottom"
+            android:layout_marginBottom="@dimen/RuleFragment_HeaderTextMarginTopBottom" />
+        <TextView
+            android:text="Собери компанию, в которой планируешь хорошо повеселиться.  Приготовь напитки: они могут быть любыми.Разумеется, особую пикантность игре придаёт алкоголь. Определи обьём штрафной, которую будет выпивать игрок, если откажется от задания или не сможет его выполнить."
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textContainer"
+            android:textColor="@color/name_black"
+            android:textSize="@dimen/RuleFragment_ContainerTextSize"
+            android:layout_gravity="left" />
+    </LinearLayout>
+</RelativeLayout>

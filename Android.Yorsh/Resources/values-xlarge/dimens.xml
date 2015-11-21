@@ -86,4 +86,14 @@
     <dimen name="TaskProgress_ScoreLayoutHeight">240dp</dimen>
     <dimen name="TaskProgress_CurrentScoreTextSize">38sp</dimen>
     <dimen name="TaskProgress_EndDescTextSize">36sp</dimen>
+
+    <dimen name="RuleFragment_ScrollImageMarginBottom">30dp</dimen>
+    <dimen name="RuleFragment_LayoutMarginBottom">28dp</dimen>
+    <dimen name="RuleFragment_LayoutMarginTop">35dp</dimen>
+    <dimen name="RuleFragment_LayoutMarginLeftRight">30dp</dimen>
+    <dimen name="RuleFragment_LayoutPadding">25dp</dimen>
+    <dimen name="RuleFragment_ImageViewHeight">400dp</dimen>
+    <dimen name="RuleFragment_HeaderTextSize">48sp</dimen>
+    <dimen name="RuleFragment_HeaderTextMarginTopBottom">7dp</dimen>
+    <dimen name="RuleFragment_ContainerTextSize">32sp</dimen>
 </resources>
