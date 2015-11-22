@@ -11,7 +11,6 @@ using Stream = System.IO.Stream;
 using Android.Graphics;
 using Android.Widget;
 using Android.Views;
-using System.Linq;
 
 namespace Android.Yorsh.Helpers
 {

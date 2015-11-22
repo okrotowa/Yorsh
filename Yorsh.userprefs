@@ -1,13 +1,17 @@
 ﻿<Properties StartupItem="Android.Yorsh\Android.Yorsh.csproj" RefactoringSettings.EnableRefactorings="True">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.Xamarin_Android_API_15" />
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.Nexus S (KitKat)" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Android.Yorsh\Helpers\ActivityExtensions.cs">
     <Files>
-      <File FileName="Android.Yorsh\Resources\values\arrays.xml" Line="61" Column="299" />
+      <File FileName="Android.Yorsh\Activities\ResultsGameActivity.cs" Line="14" Column="34" />
+      <File FileName="Android.Yorsh\Resources\values\strings.xml" Line="1" Column="1" />
+      <File FileName="Android.Yorsh\Helpers\ActivityExtensions.cs" Line="18" Column="6" />
+      <File FileName="Android.Yorsh\Activities\AddNewPlayerActivity.cs" Line="9" Column="22" />
+      <File FileName="Android.Yorsh\Activities\RulesActivity.cs" Line="16" Column="30" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.Android.Yorsh AndroidDesignerPreferredDevice="3.7&quot; WVGA (Nexus One)" />
+  <MonoDevelop.Ide.ItemProperties.Android.Yorsh AndroidDesignerPreferredDevice="Nexus 4" />
 </Properties>

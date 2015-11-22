@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:top="@dimen/FirstPalyerItem_HalfImageSize">
+		<shape android:shape="rectangle" >
+			<solid android:color="#ffffff" />
+			<corners android:radius="@dimen/RoundedCorners" />
+		</shape>
+    </item>
+</layer-list>

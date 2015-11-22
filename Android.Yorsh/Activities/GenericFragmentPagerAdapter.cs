@@ -14,6 +14,7 @@ namespace Android.Yorsh
 			params Android.Support.V4.App.Fragment[] fragments) : base(fm)
 		{
 			_fragments = fragments;
+			
 		}
 
 		public override int Count

@@ -3,10 +3,10 @@
     android:orientation="vertical"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:background="@drawable/game_background"
+    android:background="@android:color/transparent"
     android:minWidth="25px"
     android:minHeight="25px">
-    <ImageView
+<!--    <ImageView
         android:src="@drawable/rules_one_sroll_page"
         android:layout_alignParentBottom="true"
         android:layout_width="wrap_content"
@@ -14,12 +14,12 @@
         android:id="@+id/imageScroll"
         android:paddingTop="0dp"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="@dimen/RuleFragment_ScrollImageMarginBottom" />
+        android:layout_marginBottom="@dimen/RuleFragment_ScrollImageMarginBottom" />-->
+<!--android:layout_above="@id/imageScroll"-->
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:layout_above="@id/imageScroll"
         android:background="@drawable/round_rect_shape_white_background"
         android:layout_marginBottom="@dimen/RuleFragment_LayoutMarginBottom"
         android:layout_marginTop="@dimen/RuleFragment_LayoutMarginTop"

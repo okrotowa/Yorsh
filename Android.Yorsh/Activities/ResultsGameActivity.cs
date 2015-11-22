@@ -2,34 +2,36 @@ using System.Collections.Generic;
 using System.Linq;
 using Android.App;
 using Android.Content;
+using Android.Content.PM;
 using Android.OS;
 using Android.Views;
 using Android.Widget;
 using Android.Yorsh.Helpers;
 using Android.Yorsh.Model;
-using Android.Content.PM;
+
 namespace Android.Yorsh.Activities
 {
-	[Activity(Label = "@string/ResultsString",MainLauncher = false, ParentActivity = typeof(GameActivity),ScreenOrientation = ScreenOrientation.Portrait)]
+	[Activity(Label = "@string/ResultsString", MainLauncher = false, ParentActivity = typeof(GameActivity),ScreenOrientation = ScreenOrientation.Portrait)]
     public class ResultsGameActivity : BaseActivity
     {
-        protected async override void OnCreate(Bundle bundle)
+        protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
             SetContentView(Resource.Layout.ResultsGame);
-			await ActivityExtensions.StubInitialize (this);
+			//await this.StubInitialize ();
             var isEndGame = Intent.GetBooleanExtra("isEnd", false);
             var listView = FindViewById<ListView>(Resource.Id.playerTournamentListView);
 			var adapter = new ListAdapter(this, isEndGame);
 			listView.Adapter = adapter;
-			var view = this.LayoutInflater.Inflate(Resource.Layout.FirstPlayerItem, null);
-			listView.AddHeaderView (view);
-            SetButtonsAndActionBar(isEndGame);
+			if (isEndGame)
+				SetButtonsAndActionBarIsEndGame ();
+			else
+				SetButtonsAndActionBarIsNotEndGame ();
         }
 
         private void SetButtonsAndActionBar(bool isEndGame)
         {
-                      
+			   
             var completeGameButton = FindViewById<Button>(Resource.Id.completeGameButton);
 			completeGameButton.Text = GetString(isEndGame 
 				? Resource.String.NewGameString 
@@ -46,6 +48,37 @@ namespace Android.Yorsh.Activities
 
 
         }
+		void SetButtonsAndActionBarIsEndGame()
+		{
+			var startPlayButton = FindViewById<Button>(Resource.Id.startPlayButton);
+			startPlayButton.Visibility = ViewStates.Visible;
+			FindViewById<RelativeLayout> (Resource.Id.relativeLayout).Visibility = ViewStates.Gone;
+			this.ActionBar.Hide ();
+			startPlayButton.Touch+=(sender, e)=>this.OnTouchButtonDarker(startPlayButton, e);
+			startPlayButton.SetTypeface (this.MyriadProFont (MyriadPro.BoldCondensed), Android.Graphics.TypefaceStyle.Normal);
+			startPlayButton.Click+= delegate {
+				Rep.Instance.Clear();				 
+				this.StartActivityWithoutBackStack(new Intent(this,typeof(MainMenuActivity)));
+			};
+				
+		}
+
+		void SetButtonsAndActionBarIsNotEndGame()
+		{
+			FindViewById<Button> (Resource.Id.startPlayButton).Visibility = ViewStates.Gone;
+			FindViewById<RelativeLayout> (Resource.Id.relativeLayout).Visibility = ViewStates.Visible;
+			this.ActionBar.Show ();
+			var completeGameButton = FindViewById<Button> (Resource.Id.completeGameButton);
+			completeGameButton.Touch+=(sender, e)=>this.OnTouchButtonDarker(completeGameButton, e);
+			completeGameButton.SetTypeface (this.MyriadProFont (MyriadPro.BoldCondensed), Android.Graphics.TypefaceStyle.Normal);
+			completeGameButton.Click+= delegate {
+				Intent.PutExtra("isEnd",true);
+				this.Recreate();
+			};
+			var shareButton = FindViewById<Button> (Resource.Id.shareButton);
+			shareButton.Touch+=(sender, e)=>this.OnTouchButtonDarker(shareButton, e);
+			shareButton.SetTypeface (this.MyriadProFont (MyriadPro.BoldCondensed), Android.Graphics.TypefaceStyle.Normal);
+		}
 
         private class ListAdapter : BaseAdapter<Player>
         {

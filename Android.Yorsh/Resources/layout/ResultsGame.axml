@@ -3,48 +3,62 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:background="@drawable/game_background">
-    <RelativeLayout
-        android:id="@+id/relativeLayout"
+    <FrameLayout
+        android:id="@+id/buttonFrameLayout"
         android:layout_width="fill_parent"
-        android:layout_centerHorizontal="true"
+        android:layout_height="@dimen/PlayersList_buttonHeight"
+        android:layout_marginBottom="@dimen/ContentMarginTopBottom"
         android:layout_alignParentBottom="true"
-        android:layout_marginRight="@dimen/AddNewPlayers_padding"
-        android:layout_marginLeft="@dimen/AddNewPlayers_padding"
-        android:layout_height="@dimen/AddNewPlayers_buttonHeight"
-        android:layout_marginBottom="@dimen/ContentMarginTopBottom">
-        <View
-            android:id="@+id/TextView01"
-            android:layout_width="@dimen/AddNewPlayers_padding"
-            android:layout_height="match_parent"
-            android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="@dimen/ContentMarginLeftRight"
+        android:layout_marginLeft="@dimen/ContentMarginLeftRight">
         <Button
-            android:id="@+id/completeGameButton"
+            android:id="@+id/startPlayButton"
+            android:visibility="visible"
             android:text="@string/NewGameString"
+            android:layout_width="@dimen/PlayersList_buttonWidth"
+            android:background="@drawable/start_game_button"
+            android:gravity="center"
+            android:layout_height="@dimen/PlayersList_buttonHeight"
+            android:textSize="@dimen/PlayersList_buttonTextSize"
+            android:layout_gravity="center" />
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:visibility="gone"
             android:layout_width="fill_parent"
-            android:layout_height="match_parent"
-            android:background="@drawable/ready_button"
-            android:layout_below="@id/TextView01"
-            android:layout_toLeftOf="@id/TextView01"
-            android:layout_alignParentTop="true"
-            android:textColor="#FFFFFF"
-            android:textSize="@dimen/AddNewPlayers_buttonTextSize" />
-        <Button
-            android:id="@+id/shareButton"
-            android:text="@string/ShareString"
-            android:background="@drawable/shared"
-            android:layout_width="fill_parent"
-            android:layout_height="match_parent"
-            android:layout_toRightOf="@id/TextView01"
-            android:layout_alignParentTop="true"
-            android:textColor="@android:color/white"
-            android:textSize="@dimen/AddNewPlayers_buttonTextSize" />
-    </RelativeLayout>
+            android:layout_height="fill_parent">
+            <View
+                android:id="@+id/TextView01"
+                android:layout_width="@dimen/AddNewPlayers_padding"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true" />
+            <Button
+                android:id="@+id/completeGameButton"
+                android:text="@string/NewGameString"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/ready_button"
+                android:layout_toLeftOf="@id/TextView01"
+                android:layout_alignParentTop="true"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/AddNewPlayers_buttonTextSize" />
+            <Button
+                android:id="@+id/shareButton"
+                android:text="@string/ShareString"
+                android:background="@drawable/shared"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_toRightOf="@id/TextView01"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/AddNewPlayers_buttonTextSize" />
+        </RelativeLayout>
+    </FrameLayout>
     <ListView
         android:id="@+id/playerTournamentListView"
-        android:background="@drawable/round_rect_shape_white_background"
+        android:background="@drawable/table_list_background"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:layout_above="@id/relativeLayout"
+        android:layout_above="@id/buttonFrameLayout"
         android:layout_marginBottom="@dimen/ContentMarginTopBottom"
         android:layout_marginTop="@dimen/ContentMarginTopBottom"
         android:layout_marginLeft="@dimen/ContentMarginLeftRight"

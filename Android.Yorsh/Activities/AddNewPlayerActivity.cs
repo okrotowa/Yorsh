@@ -18,12 +18,12 @@ namespace Android.Yorsh.Activities
 	[Activity(Label = "@string/AddNewPlayerLowCaseString",ParentActivity = typeof(AddPlayersActivity), ScreenOrientation = ScreenOrientation.Portrait)]
     public class AddNewPlayerActivity : BaseActivity
     {
-        private Bitmap _playerImage;
-		private Button _confirmButton;
-		private Button _chooseFromContactsButton;
-		private Button _cancelButton;
-		private EditText _editText;
-		private ImageButton _playerImageButton;
+        Bitmap _playerImage;
+		Button _confirmButton;
+		Button _chooseFromContactsButton;
+		Button _cancelButton;
+		EditText _editText;
+		ImageButton _playerImageButton;
 
         protected override void OnCreate(Bundle bundle)
         {

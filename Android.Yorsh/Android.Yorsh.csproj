@@ -396,6 +396,7 @@
     <AndroidResource Include="Resources\drawable\rules_two_sroll_page.png" />
     <AndroidResource Include="Resources\drawable\rules_three_sroll_page.png" />
     <AndroidResource Include="Resources\drawable\rules_one_page.png" />
+    <AndroidResource Include="Resources\drawable\table_list_background.xml" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\MainMenu.axml" />

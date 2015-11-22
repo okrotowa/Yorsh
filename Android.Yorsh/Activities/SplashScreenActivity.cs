@@ -5,7 +5,7 @@ using Android.Yorsh.Helpers;
 
 namespace Android.Yorsh.Activities
 {
-	[Activity(Theme = "@android:style/Theme.NoTitleBar",MainLauncher = false, NoHistory = true,ScreenOrientation = ScreenOrientation.Portrait)]
+	[Activity(Theme = "@android:style/Theme.NoTitleBar",MainLauncher = true, NoHistory = true,ScreenOrientation = ScreenOrientation.Portrait)]
     public class SplashScreenActivity : Activity
     {
 		protected async override void OnCreate (Bundle savedInstanceState)
