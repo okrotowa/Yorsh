@@ -31,17 +31,6 @@
             android:src="@drawable/light_bottom"
             android:adjustViewBounds="true"
             android:layout_marginBottom="-17dp" />
-        <Button
-            android:background="@drawable/icon_top_70"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:id="@+id/imageButOne"
-            android:layout_marginLeft="30dp"
-            android:text="10 штук"
-            android:textSize="8sp"
-            android:layout_below="@id/textDescription"
-            android:layout_alignParentLeft="true"
-            android:layout_marginTop="20dp" />
         <TextView
             android:text="ЗАДАНИЯ"
             android:layout_width="wrap_content"
@@ -63,6 +52,17 @@
             android:layout_centerHorizontal="true"
             android:layout_below="@id/textHeader"
             android:layout_marginTop="5dp" />
+        <Button
+            android:background="@drawable/icon_top_70"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/imageButOne"
+            android:layout_marginLeft="30dp"
+            android:text="10 штук"
+            android:textSize="8sp"
+            android:layout_below="@id/textDescription"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="20dp" />
         <TextView
             android:text="29 руб."
             android:layout_width="wrap_content"

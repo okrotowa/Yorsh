@@ -641,10 +641,8 @@ namespace Android.Yorsh
 			// aapt resource value: 0x7f090004
 			public const int TextView01 = 2131296260;
 			
-			// aapt resource value: 0x7f090047
-			public const int addPlayer = 2131296327;
-			// aapt resource value: 0x7f090049
-			public const int addPlayer = 2131296329;
+			// aapt resource value: 0x7f09005d
+			public const int addPlayer = 2131296349;
 			
 			// aapt resource value: 0x7f090012
 			public const int bonusText = 2131296274;
@@ -658,10 +656,8 @@ namespace Android.Yorsh
 			// aapt resource value: 0x7f090005
 			public const int cancelButton = 2131296261;
 			
-			// aapt resource value: 0x7f090041
-			public const int changeCountScoreText = 2131296321;
-			// aapt resource value: 0x7f090043
-			public const int changeCountScoreText = 2131296323;
+			// aapt resource value: 0x7f090057
+			public const int changeCountScoreText = 2131296343;
 			
 			// aapt resource value: 0x7f090003
 			public const int chooseFromContButton = 2131296259;
@@ -690,34 +686,47 @@ namespace Android.Yorsh
 			// aapt resource value: 0x7f090011
 			public const int continueButton = 2131296273;
 			
-			// aapt resource value: 0x7f090043
-			public const int currentScoreText = 2131296323;
-			// aapt resource value: 0x7f090045
-			public const int currentScoreText = 2131296325;
+			// aapt resource value: 0x7f090059
+			public const int currentScoreText = 2131296345;
 			
-			// aapt resource value: 0x7f090046
-			public const int customActionButton = 2131296326;
-			// aapt resource value: 0x7f090048
-			public const int customActionButton = 2131296328;
+			// aapt resource value: 0x7f09005c
+			public const int customActionButton = 2131296348;
 			
-			// aapt resource value: 0x7f090040
-			public const int descLayout = 2131296320;
-			// aapt resource value: 0x7f090042
-			public const int descLayout = 2131296322;
+			// aapt resource value: 0x7f090056
+			public const int descLayout = 2131296342;
 			
 			// aapt resource value: 0x7f090008
 			public const int doneImage = 2131296264;
 			
-			// aapt resource value: 0x7f090042
-			public const int endDescriptionText = 2131296322;
-			// aapt resource value: 0x7f090044
-			public const int endDescriptionText = 2131296324;
+			// aapt resource value: 0x7f090058
+			public const int endDescriptionText = 2131296344;
 			
 			// aapt resource value: 0x7f09001c
 			public const int imageBackgroundRules = 2131296284;
 			
-			// aapt resource value: 0x7f09003f
-			public const int imageButOne = 2131296319;
+			// aapt resource value: 0x7f090040
+			public const int imageButOne = 2131296320;
+			
+			// aapt resource value: 0x7f090044
+			public const int imageButThree = 2131296324;
+			
+			// aapt resource value: 0x7f09004e
+			public const int imageButThreeOne = 2131296334;
+			
+			// aapt resource value: 0x7f090051
+			public const int imageButThreeTwo = 2131296337;
+			
+			// aapt resource value: 0x7f090042
+			public const int imageButTwo = 2131296322;
+			
+			// aapt resource value: 0x7f090048
+			public const int imageButTwoOne = 2131296328;
+			
+			// aapt resource value: 0x7f09004c
+			public const int imageButTwoThree = 2131296332;
+			
+			// aapt resource value: 0x7f09004a
+			public const int imageButTwoTwo = 2131296330;
 			
 			// aapt resource value: 0x7f090021
 			public const int imageCardView = 2131296289;
@@ -731,16 +740,12 @@ namespace Android.Yorsh
 			// aapt resource value: 0x7f09000b
 			public const int isPlayText = 2131296267;
 			
-			// aapt resource value: 0x7f090044
-			public const int layout = 2131296324;
-			// aapt resource value: 0x7f090046
-			public const int layout = 2131296326;
+			// aapt resource value: 0x7f09005a
+			public const int layout = 2131296346;
 			
 			// aapt resource value: 0x7f090018
 			public const int leadText = 2131296280;
 			
-			// aapt resource value: 0x7f09003d
-			public const int light_bottom = 2131296317;
 			// aapt resource value: 0x7f09003e
 			public const int light_bottom = 2131296318;
 			
@@ -831,20 +836,14 @@ namespace Android.Yorsh
 			// aapt resource value: 0x7f09000c
 			public const int startPlayButton = 2131296268;
 			
-			// aapt resource value: 0x7f09003f
-			public const int statusDescriptionText = 2131296319;
-			// aapt resource value: 0x7f090041
-			public const int statusDescriptionText = 2131296321;
+			// aapt resource value: 0x7f090055
+			public const int statusDescriptionText = 2131296341;
 			
-			// aapt resource value: 0x7f09003e
-			public const int statusTitleText = 2131296318;
-			// aapt resource value: 0x7f090040
-			public const int statusTitleText = 2131296320;
+			// aapt resource value: 0x7f090054
+			public const int statusTitleText = 2131296340;
 			
-			// aapt resource value: 0x7f090048
-			public const int tableButton = 2131296328;
-			// aapt resource value: 0x7f09004a
-			public const int tableButton = 2131296330;
+			// aapt resource value: 0x7f09005e
+			public const int tableButton = 2131296350;
 			
 			// aapt resource value: 0x7f09003d
 			public const int tableShop = 2131296317;
@@ -852,19 +851,56 @@ namespace Android.Yorsh
 			// aapt resource value: 0x7f09003a
 			public const int taskImageButton = 2131296314;
 			
+			// aapt resource value: 0x7f090041
+			public const int textButOne = 2131296321;
+			
+			// aapt resource value: 0x7f090045
+			public const int textButThree = 2131296325;
+			
+			// aapt resource value: 0x7f090043
+			public const int textButTwo = 2131296323;
+			
+			// aapt resource value: 0x7f090049
+			public const int textButTwoOne = 2131296329;
+			
+			// aapt resource value: 0x7f09004b
+			public const int textButTwoTwo = 2131296331;
+			
 			// aapt resource value: 0x7f090022
 			public const int textCard = 2131296290;
 			
 			// aapt resource value: 0x7f09001e
 			public const int textContainer = 2131296286;
 			
+			// aapt resource value: 0x7f09003f
+			public const int textDescription = 2131296319;
+			
+			// aapt resource value: 0x7f090053
+			public const int textDescriptionThreeFour = 2131296339;
+			
+			// aapt resource value: 0x7f09004f
+			public const int textDescriptionThreeOne = 2131296335;
+			
+			// aapt resource value: 0x7f090052
+			public const int textDescriptionThreeThree = 2131296338;
+			
+			// aapt resource value: 0x7f090050
+			public const int textDescriptionThreeTwo = 2131296336;
+			
+			// aapt resource value: 0x7f090047
+			public const int textDescriptionTwo = 2131296327;
+			
 			// aapt resource value: 0x7f09001d
 			public const int textHeader = 2131296285;
 			
-			// aapt resource value: 0x7f090045
-			public const int titleText = 2131296325;
-			// aapt resource value: 0x7f090047
-			public const int titleText = 2131296327;
+			// aapt resource value: 0x7f09004d
+			public const int textHeaderThree = 2131296333;
+			
+			// aapt resource value: 0x7f090046
+			public const int textHeaderTwo = 2131296326;
+			
+			// aapt resource value: 0x7f09005b
+			public const int titleText = 2131296347;
 			
 			// aapt resource value: 0x7f090032
 			public const int viewPager = 2131296306;
