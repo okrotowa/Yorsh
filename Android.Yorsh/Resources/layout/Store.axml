@@ -1,7 +1,296 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent">
-
-</LinearLayout>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/game_background"
+    android:minWidth="25px"
+    android:minHeight="25px">
+    <RelativeLayout
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_shop"
+        android:id="@+id/tableShop"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/light_top"
+            android:adjustViewBounds="true"
+            android:layout_marginTop="-15dp" />
+        <ImageView
+            android:id="@+id/light_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/light_bottom"
+            android:adjustViewBounds="true"
+            android:layout_marginBottom="-17dp" />
+        <Button
+            android:background="@drawable/icon_top_70"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/imageButOne"
+            android:layout_marginLeft="30dp"
+            android:text="10 штук"
+            android:textSize="8sp"
+            android:layout_below="@id/textDescription"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="20dp" />
+        <TextView
+            android:text="ЗАДАНИЯ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textHeader"
+            android:textColor="#2c7a44"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_marginTop="35dp"
+            android:layout_centerHorizontal="true" />
+        <TextView
+            android:text="У вас 70 заданий, можно купить еще 160"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textDescription"
+            android:textColor="#110626"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/textHeader"
+            android:layout_marginTop="5dp" />
+        <TextView
+            android:text="29 руб."
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textButOne"
+            android:textColor="#110626"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:layout_below="@id/imageButOne"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="40dp"
+            android:textSize="12sp" />
+        <Button
+            android:background="@drawable/icon_top_70"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/imageButTwo"
+            android:layout_below="@id/textDescription"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:text="30 штук"
+            android:textSize="8sp" />
+        <TextView
+            android:text="59 руб."
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textButTwo"
+            android:textColor="#110626"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:layout_below="@id/imageButTwo"
+            android:layout_marginTop="5dp"
+            android:layout_centerHorizontal="true"
+            android:textSize="12sp" />
+        <Button
+            android:background="@drawable/icon_top_70"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/imageButThree"
+            android:layout_below="@id/textDescription"
+            android:layout_marginTop="20dp"
+            android:text="70 штук"
+            android:textSize="8sp"
+            android:layout_marginRight="30dp"
+            android:layout_alignParentRight="true" />
+        <TextView
+            android:text="119 руб."
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textButThree"
+            android:textColor="#110626"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:layout_below="@id/imageButThree"
+            android:layout_marginTop="5dp"
+            android:layout_centerHorizontal="true"
+            android:textSize="12sp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="35dp" />
+        <TextView
+            android:text="БОНУСЫ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textHeaderTwo"
+            android:textColor="#2c7a44"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_below="@id/imageButThree"
+            android:layout_marginTop="50dp"
+            android:layout_centerHorizontal="true" />
+        <TextView
+            android:text="У вас 20 бонусов, можно купить еще 80"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textDescriptionTwo"
+            android:textColor="#110626"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/textHeaderTwo"
+            android:layout_marginTop="5dp" />
+        <Button
+            android:background="@drawable/icon_center_all"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/imageButTwoOne"
+            android:layout_marginLeft="30dp"
+            android:text="10 штук"
+            android:textSize="8sp"
+            android:layout_below="@id/textDescriptionTwo"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="20dp" />
+        <TextView
+            android:text="15 руб."
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textButTwoOne"
+            android:textColor="#110626"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:layout_below="@id/imageButTwoOne"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="40dp"
+            android:textSize="12sp" />
+        <Button
+            android:background="@drawable/icon_center_all"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/imageButTwoTwo"
+            android:layout_below="@id/textDescriptionTwo"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:text="30 штук"
+            android:textSize="8sp" />
+        <TextView
+            android:text="59 руб."
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textButTwoTwo"
+            android:textColor="#110626"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:layout_below="@id/imageButTwoTwo"
+            android:layout_marginTop="5dp"
+            android:layout_centerHorizontal="true"
+            android:textSize="12sp" />
+        <Button
+            android:background="@drawable/icon_center_all"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/imageButTwoThree"
+            android:layout_below="@id/textDescriptionTwo"
+            android:layout_marginTop="20dp"
+            android:text="∞"
+            android:textSize="20sp"
+            android:layout_marginRight="30dp"
+            android:layout_alignParentRight="true" />
+        <TextView
+            android:text="129 руб."
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textButThree"
+            android:textColor="#110626"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:layout_below="@id/imageButTwoThree"
+            android:layout_marginTop="5dp"
+            android:layout_centerHorizontal="true"
+            android:textSize="12sp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="35dp" />
+        <TextView
+            android:text="ЕЩЕ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textHeaderThree"
+            android:textColor="#2c7a44"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_below="@id/imageButTwoThree"
+            android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true" />
+        <Button
+            android:background="@drawable/beer_icon_adblock"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/imageButThreeOne"
+            android:layout_marginLeft="30dp"
+            android:textSize="8sp"
+            android:layout_below="@id/textHeaderThree"
+            android:layout_alignParentLeft="true" />
+        <TextView
+            android:text="Отключить рекламу"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textDescriptionThreeOne"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_below="@id/textHeaderThree"
+            android:layout_marginTop="25dp"
+            android:layout_centerHorizontal="true" />
+        <TextView
+            android:text="59 руб."
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textDescriptionThreeTwo"
+            android:textColor="#000000"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:layout_below="@id/textHeaderThree"
+            android:layout_marginTop="25dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="35dp" />
+        <Button
+            android:background="@drawable/icon_top_70"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/imageButThreeTwo"
+            android:layout_marginLeft="30dp"
+            android:textSize="8sp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/imageButThreeOne"
+            android:layout_alignParentLeft="true" />
+        <TextView
+            android:text="Добавить задание"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textDescriptionThreeThree"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_below="@id/textHeaderThree"
+            android:layout_marginTop="85dp"
+            android:layout_centerHorizontal="true" />
+        <TextView
+            android:text="Бесплатно"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textDescriptionThreeFour"
+            android:textColor="#000000"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:layout_below="@id/textHeaderThree"
+            android:layout_marginTop="85dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="35dp" />
+    </RelativeLayout>
+</RelativeLayout>

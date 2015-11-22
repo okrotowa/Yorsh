@@ -643,6 +643,8 @@ namespace Android.Yorsh
 			
 			// aapt resource value: 0x7f090047
 			public const int addPlayer = 2131296327;
+			// aapt resource value: 0x7f090049
+			public const int addPlayer = 2131296329;
 			
 			// aapt resource value: 0x7f090012
 			public const int bonusText = 2131296274;
@@ -658,6 +660,8 @@ namespace Android.Yorsh
 			
 			// aapt resource value: 0x7f090041
 			public const int changeCountScoreText = 2131296321;
+			// aapt resource value: 0x7f090043
+			public const int changeCountScoreText = 2131296323;
 			
 			// aapt resource value: 0x7f090003
 			public const int chooseFromContButton = 2131296259;
@@ -688,21 +692,32 @@ namespace Android.Yorsh
 			
 			// aapt resource value: 0x7f090043
 			public const int currentScoreText = 2131296323;
+			// aapt resource value: 0x7f090045
+			public const int currentScoreText = 2131296325;
 			
 			// aapt resource value: 0x7f090046
 			public const int customActionButton = 2131296326;
+			// aapt resource value: 0x7f090048
+			public const int customActionButton = 2131296328;
 			
 			// aapt resource value: 0x7f090040
 			public const int descLayout = 2131296320;
+			// aapt resource value: 0x7f090042
+			public const int descLayout = 2131296322;
 			
 			// aapt resource value: 0x7f090008
 			public const int doneImage = 2131296264;
 			
 			// aapt resource value: 0x7f090042
 			public const int endDescriptionText = 2131296322;
+			// aapt resource value: 0x7f090044
+			public const int endDescriptionText = 2131296324;
 			
 			// aapt resource value: 0x7f09001c
 			public const int imageBackgroundRules = 2131296284;
+			
+			// aapt resource value: 0x7f09003f
+			public const int imageButOne = 2131296319;
 			
 			// aapt resource value: 0x7f090021
 			public const int imageCardView = 2131296289;
@@ -718,12 +733,16 @@ namespace Android.Yorsh
 			
 			// aapt resource value: 0x7f090044
 			public const int layout = 2131296324;
+			// aapt resource value: 0x7f090046
+			public const int layout = 2131296326;
 			
 			// aapt resource value: 0x7f090018
 			public const int leadText = 2131296280;
 			
 			// aapt resource value: 0x7f09003d
 			public const int light_bottom = 2131296317;
+			// aapt resource value: 0x7f09003e
+			public const int light_bottom = 2131296318;
 			
 			// aapt resource value: 0x7f09001b
 			public const int linearLayout1 = 2131296283;
@@ -814,12 +833,21 @@ namespace Android.Yorsh
 			
 			// aapt resource value: 0x7f09003f
 			public const int statusDescriptionText = 2131296319;
+			// aapt resource value: 0x7f090041
+			public const int statusDescriptionText = 2131296321;
 			
 			// aapt resource value: 0x7f09003e
 			public const int statusTitleText = 2131296318;
+			// aapt resource value: 0x7f090040
+			public const int statusTitleText = 2131296320;
 			
 			// aapt resource value: 0x7f090048
 			public const int tableButton = 2131296328;
+			// aapt resource value: 0x7f09004a
+			public const int tableButton = 2131296330;
+			
+			// aapt resource value: 0x7f09003d
+			public const int tableShop = 2131296317;
 			
 			// aapt resource value: 0x7f09003a
 			public const int taskImageButton = 2131296314;
@@ -835,6 +863,8 @@ namespace Android.Yorsh
 			
 			// aapt resource value: 0x7f090045
 			public const int titleText = 2131296325;
+			// aapt resource value: 0x7f090047
+			public const int titleText = 2131296327;
 			
 			// aapt resource value: 0x7f090032
 			public const int viewPager = 2131296306;

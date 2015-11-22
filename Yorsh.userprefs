@@ -1,4 +1,5 @@
 ﻿<Properties StartupItem="Android.Yorsh\Android.Yorsh.csproj" RefactoringSettings.EnableRefactorings="True">
+<<<<<<< HEAD
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.Nexus S (KitKat)" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Android.Yorsh\Helpers\ActivityExtensions.cs">
     <Files>
@@ -9,6 +10,10 @@
       <File FileName="Android.Yorsh\Activities\RulesActivity.cs" Line="16" Column="30" />
     </Files>
   </MonoDevelop.Ide.Workbench>
+=======
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.Xamarin_Android_API_15" />
+  <MonoDevelop.Ide.Workbench />
+>>>>>>> e540797dfb0008b23893238c9f8c5d3a1883d9f4
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
