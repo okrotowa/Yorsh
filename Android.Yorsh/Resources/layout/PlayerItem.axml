@@ -27,7 +27,9 @@
         android:layout_height="wrap_content"
         android:text="124"
         android:layout_alignParentRight="true"
-        android:layout_centerVertical="true" />
+        android:layout_centerVertical="true"
+        android:textColor="#ff349fdc"
+        android:textSize="@dimen/PlayerScoreText_Size" />
     <TextView
         android:id="@+id/playerName"
         android:text="Default"
@@ -39,5 +41,6 @@
         android:layout_marginRight="5.0dp"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:textSize="@dimen/AddPlayerItem_nameTextSize" />
+        android:textSize="@dimen/PlayerNameText_Size"
+        android:textColor="#ff110626" />
 </RelativeLayout>

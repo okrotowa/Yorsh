@@ -14,7 +14,7 @@
         android:layout_marginLeft="@dimen/ContentMarginLeftRight">
         <Button
             android:id="@+id/startPlayButton"
-            android:visibility="visible"
+            android:visibility="gone"
             android:text="@string/NewGameString"
             android:layout_width="@dimen/PlayersList_buttonWidth"
             android:background="@drawable/start_game_button"
@@ -24,7 +24,7 @@
             android:layout_gravity="center" />
         <RelativeLayout
             android:id="@+id/relativeLayout"
-            android:visibility="gone"
+            android:visibility="visible"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent">
             <View
@@ -41,7 +41,7 @@
                 android:layout_toLeftOf="@id/TextView01"
                 android:layout_alignParentTop="true"
                 android:textColor="#FFFFFF"
-                android:textSize="@dimen/AddNewPlayers_buttonTextSize" />
+                android:textSize="@dimen/ResultGameButton_Text_Size" />
             <Button
                 android:id="@+id/shareButton"
                 android:text="@string/ShareString"
@@ -50,7 +50,7 @@
                 android:layout_height="fill_parent"
                 android:layout_toRightOf="@id/TextView01"
                 android:textColor="@android:color/white"
-                android:textSize="@dimen/AddNewPlayers_buttonTextSize" />
+                android:textSize="@dimen/ResultGameButton_Text_Size" />
         </RelativeLayout>
     </FrameLayout>
     <ListView
@@ -59,8 +59,8 @@
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:layout_above="@id/buttonFrameLayout"
-        android:layout_marginBottom="@dimen/ContentMarginTopBottom"
+        android:layout_marginBottom="@dimen/ResultGameList_MarginBotom"
         android:layout_marginTop="@dimen/ContentMarginTopBottom"
-        android:layout_marginLeft="@dimen/ContentMarginLeftRight"
-        android:layout_marginRight="@dimen/ContentMarginLeftRight" />
+        android:layout_marginLeft="@dimen/ResultGameList_MarginLeftRight"
+        android:layout_marginRight="@dimen/ResultGameList_MarginLeftRight" />
 </RelativeLayout>
