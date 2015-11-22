@@ -102,4 +102,10 @@
     <dimen name="RuleFragment_HeaderTextMarginTopBottom">7dp</dimen>
     <dimen name="RuleFragment_ContainerTextSize">13sp</dimen>
 
+    <dimen name="PlayerLeadText_Size">18sp</dimen>
+    <dimen name="PlayerNameText_Size">15sp</dimen>
+    <dimen name="PlayerScoreText_Size">20sp</dimen>
+    <dimen name="ResultGameButton_Text_Size">18sp</dimen>
+    <dimen name="ResultGameList_MarginBotom">10dp</dimen>
+    <dimen name="ResultGameList_MarginLeftRight">20dp</dimen>
 </resources>
