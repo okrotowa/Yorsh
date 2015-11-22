@@ -22,9 +22,6 @@ namespace Android.Yorsh
 			var arr = Resources.GetStringArray (Resources.GetIdentifier(GetRuleName(_rule),"array", Activity.PackageName));
 			var imageId = Resources.GetIdentifier ("rules_" + GetRuleIdentifier(_rule) + "_page", "drawable", Activity.PackageName);
 			imageBackgroundRules.SetImageDrawable(Resources.GetDrawable(imageId));
-//			var imageScrollId = Resources.GetIdentifier ("rules_" + arr [0] +"_sroll_page", "drawable", Activity.PackageName);
-//			var imageScroll = Activity.FindViewById<ImageView> (Resource.Id.imageScroll);
-//			imageScroll.SetImageDrawable (Resources.GetDrawable (imageScrollId));
 			var textHeader = view.FindViewById<TextView> (Resource.Id.textHeader);
 			textHeader.Text = arr [0];
 			textHeader.SetTypeface (this.Activity.MyriadProFont (MyriadPro.BoldCondensed), Android.Graphics.TypefaceStyle.Normal);

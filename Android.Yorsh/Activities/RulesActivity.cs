@@ -10,7 +10,6 @@ namespace Android.Yorsh.Activities
 	[Activity(Label = "@string/RulesGameString",MainLauncher = false, ParentActivity = typeof(MainMenuActivity),ScreenOrientation = ScreenOrientation.Portrait)]
 	public class RulesActivity : BaseActivity
 	{
-		ViewPager viewPager;
 		protected override void OnCreate(Bundle bundle)
 		{
 			base.OnCreate (bundle);

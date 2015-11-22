@@ -29,25 +29,6 @@ namespace Android.Yorsh.Activities
 				SetButtonsAndActionBarIsNotEndGame ();
         }
 
-        private void SetButtonsAndActionBar(bool isEndGame)
-        {
-			   
-            var completeGameButton = FindViewById<Button>(Resource.Id.completeGameButton);
-			completeGameButton.Text = GetString(isEndGame 
-				? Resource.String.NewGameString 
-				: Resource.String.CompleteGameString);
-			if (isEndGame) Window.RequestFeature(WindowFeatures.ActionBar);
-			//ActionBar.Hide();
-
-
-            completeGameButton.Click += (sender, args) =>
-            {
-                Rep.Instance.Clear();
-                this.StartActivityWithoutBackStack(new Intent(this, typeof(MainMenuActivity)));
-            };
-
-
-        }
 		void SetButtonsAndActionBarIsEndGame()
 		{
 			var startPlayButton = FindViewById<Button>(Resource.Id.startPlayButton);
