@@ -69,13 +69,14 @@
     <dimen name="Game_x2TextSize">17sp</dimen>
 
     <dimen name="Bonus_ContentPadding">20dp</dimen>
-    <dimen name="Bonus_ImageHeight">230dp</dimen>
-    <dimen name="Bonus_ImageWidth">153dp</dimen>
+    <dimen name="Bonus_ImageHeight">170dp</dimen>
+    <dimen name="Bonus_ImageWidth">240dp</dimen>
     <dimen name="Bonus_MarginBottom">20dp</dimen>
     <dimen name="Bonus_CongratsTextSize">30sp</dimen>
-    <dimen name="Bonus_YouWonBonusTextSize">25sp</dimen>
+    <dimen name="Bonus_CongratsPadingTop">10dp</dimen>
+    <dimen name="Bonus_YouWonBonusTextSize">23sp</dimen>
     <dimen name="Bonus_BonusNameTextWidth">240dp</dimen>
-    <dimen name="Bonus_BonusNameTextSize">20sp</dimen>
+    <dimen name="Bonus_BonusNameTextSize">18sp</dimen>
     <dimen name="Bonus_ButtonWidth">140dp</dimen>
     <dimen name="Bonus_ButtonHeight">50dp</dimen>
 

@@ -16,17 +16,18 @@
         android:layout_height="wrap_content"
         android:textSize="@dimen/Bonus_CongratsTextSize"
         android:text="@string/CongratString"
-        android:textColor="@color/white"
+        android:textColor="#ff1b5e20"
         android:layout_below="@id/imageView"
         android:layout_centerHorizontal="true"
         android:id="@+id/congrats"
-        android:layout_marginTop="-5dp" />
+        android:layout_marginTop="-5dp"
+        android:paddingTop="@dimen/Bonus_CongratsPadingTop" />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="@dimen/Bonus_YouWonBonusTextSize"
         android:text="@string/YouHaveBonusString"
-        android:textColor="@color/white"
+        android:textColor="#ff558b2f"
         android:layout_below="@id/congrats"
         android:layout_centerHorizontal="true"
         android:id="@+id/youHaveBonus" />
@@ -42,7 +43,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="@dimen/Bonus_BonusNameTextSize"
-        android:textColor="@color/white"
+        android:textColor="#fffafafa"
         android:id="@+id/bonusText"
         android:gravity="center"
         android:layout_below="@id/youHaveBonus"

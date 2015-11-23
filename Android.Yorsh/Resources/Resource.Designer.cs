@@ -201,17 +201,20 @@ namespace Android.Yorsh
 			// aapt resource value: 0x7f07001a
 			public const int AddPlayerItem_removeLayoutSize = 2131165210;
 			
-			// aapt resource value: 0x7f070044
-			public const int Bonus_BonusNameTextSize = 2131165252;
+			// aapt resource value: 0x7f070045
+			public const int Bonus_BonusNameTextSize = 2131165253;
 			
-			// aapt resource value: 0x7f070043
-			public const int Bonus_BonusNameTextWidth = 2131165251;
+			// aapt resource value: 0x7f070044
+			public const int Bonus_BonusNameTextWidth = 2131165252;
+			
+			// aapt resource value: 0x7f070047
+			public const int Bonus_ButtonHeight = 2131165255;
 			
 			// aapt resource value: 0x7f070046
-			public const int Bonus_ButtonHeight = 2131165254;
+			public const int Bonus_ButtonWidth = 2131165254;
 			
-			// aapt resource value: 0x7f070045
-			public const int Bonus_ButtonWidth = 2131165253;
+			// aapt resource value: 0x7f070042
+			public const int Bonus_CongratsPadingTop = 2131165250;
 			
 			// aapt resource value: 0x7f070041
 			public const int Bonus_CongratsTextSize = 2131165249;
@@ -228,8 +231,8 @@ namespace Android.Yorsh
 			// aapt resource value: 0x7f070040
 			public const int Bonus_MarginBottom = 2131165248;
 			
-			// aapt resource value: 0x7f070042
-			public const int Bonus_YouWonBonusTextSize = 2131165250;
+			// aapt resource value: 0x7f070043
+			public const int Bonus_YouWonBonusTextSize = 2131165251;
 			
 			// aapt resource value: 0x7f070005
 			public const int ContentMarginLeftRight = 2131165189;
@@ -240,11 +243,11 @@ namespace Android.Yorsh
 			// aapt resource value: 0x7f070004
 			public const int Dialog_MinWidth = 2131165188;
 			
-			// aapt resource value: 0x7f070051
-			public const int FirstPalyerItem_HalfImageSize = 2131165265;
+			// aapt resource value: 0x7f070052
+			public const int FirstPalyerItem_HalfImageSize = 2131165266;
 			
-			// aapt resource value: 0x7f070050
-			public const int FirstPlayerItem_ImageSize = 2131165264;
+			// aapt resource value: 0x7f070051
+			public const int FirstPlayerItem_ImageSize = 2131165265;
 			
 			// aapt resource value: 0x7f070035
 			public const int Game_BottomButtonHeight = 2131165237;
@@ -354,14 +357,14 @@ namespace Android.Yorsh
 			// aapt resource value: 0x7f07000c
 			public const int MainMenu_startButtonWidth = 2131165196;
 			
-			// aapt resource value: 0x7f07005b
-			public const int PlayerLeadText_Size = 2131165275;
-			
 			// aapt resource value: 0x7f07005c
-			public const int PlayerNameText_Size = 2131165276;
+			public const int PlayerLeadText_Size = 2131165276;
 			
 			// aapt resource value: 0x7f07005d
-			public const int PlayerScoreText_Size = 2131165277;
+			public const int PlayerNameText_Size = 2131165277;
+			
+			// aapt resource value: 0x7f07005e
+			public const int PlayerScoreText_Size = 2131165278;
 			
 			// aapt resource value: 0x7f070012
 			public const int PlayersList_buttonHeight = 2131165202;
@@ -372,71 +375,71 @@ namespace Android.Yorsh
 			// aapt resource value: 0x7f070013
 			public const int PlayersList_buttonWidth = 2131165203;
 			
-			// aapt resource value: 0x7f07005e
-			public const int ResultGameButton_Text_Size = 2131165278;
-			
 			// aapt resource value: 0x7f07005f
-			public const int ResultGameList_MarginBotom = 2131165279;
+			public const int ResultGameButton_Text_Size = 2131165279;
 			
 			// aapt resource value: 0x7f070060
-			public const int ResultGameList_MarginLeftRight = 2131165280;
+			public const int ResultGameList_MarginBotom = 2131165280;
+			
+			// aapt resource value: 0x7f070061
+			public const int ResultGameList_MarginLeftRight = 2131165281;
 			
 			// aapt resource value: 0x7f070000
 			public const int RoundedCorners = 2131165184;
 			
+			// aapt resource value: 0x7f07005b
+			public const int RuleFragment_ContainerTextSize = 2131165275;
+			
 			// aapt resource value: 0x7f07005a
-			public const int RuleFragment_ContainerTextSize = 2131165274;
+			public const int RuleFragment_HeaderTextMarginTopBottom = 2131165274;
 			
 			// aapt resource value: 0x7f070059
-			public const int RuleFragment_HeaderTextMarginTopBottom = 2131165273;
+			public const int RuleFragment_HeaderTextSize = 2131165273;
 			
 			// aapt resource value: 0x7f070058
-			public const int RuleFragment_HeaderTextSize = 2131165272;
-			
-			// aapt resource value: 0x7f070057
-			public const int RuleFragment_ImageViewHeight = 2131165271;
-			
-			// aapt resource value: 0x7f070053
-			public const int RuleFragment_LayoutMarginBottom = 2131165267;
-			
-			// aapt resource value: 0x7f070055
-			public const int RuleFragment_LayoutMarginLeftRight = 2131165269;
+			public const int RuleFragment_ImageViewHeight = 2131165272;
 			
 			// aapt resource value: 0x7f070054
-			public const int RuleFragment_LayoutMarginTop = 2131165268;
+			public const int RuleFragment_LayoutMarginBottom = 2131165268;
 			
 			// aapt resource value: 0x7f070056
-			public const int RuleFragment_LayoutPadding = 2131165270;
+			public const int RuleFragment_LayoutMarginLeftRight = 2131165270;
 			
-			// aapt resource value: 0x7f070052
-			public const int RuleFragment_ScrollImageMarginBottom = 2131165266;
+			// aapt resource value: 0x7f070055
+			public const int RuleFragment_LayoutMarginTop = 2131165269;
 			
-			// aapt resource value: 0x7f07004b
-			public const int TaskProgress_ContinueButtonHeight = 2131165259;
+			// aapt resource value: 0x7f070057
+			public const int RuleFragment_LayoutPadding = 2131165271;
+			
+			// aapt resource value: 0x7f070053
+			public const int RuleFragment_ScrollImageMarginBottom = 2131165267;
 			
 			// aapt resource value: 0x7f07004c
-			public const int TaskProgress_ContinueButtonWidth = 2131165260;
-			
-			// aapt resource value: 0x7f07004e
-			public const int TaskProgress_CurrentScoreTextSize = 2131165262;
-			
-			// aapt resource value: 0x7f07004a
-			public const int TaskProgress_DescTextSize = 2131165258;
-			
-			// aapt resource value: 0x7f07004f
-			public const int TaskProgress_EndDescTextSize = 2131165263;
-			
-			// aapt resource value: 0x7f070048
-			public const int TaskProgress_MarginBottom = 2131165256;
-			
-			// aapt resource value: 0x7f070047
-			public const int TaskProgress_MarginTop = 2131165255;
+			public const int TaskProgress_ContinueButtonHeight = 2131165260;
 			
 			// aapt resource value: 0x7f07004d
-			public const int TaskProgress_ScoreLayoutHeight = 2131165261;
+			public const int TaskProgress_ContinueButtonWidth = 2131165261;
+			
+			// aapt resource value: 0x7f07004f
+			public const int TaskProgress_CurrentScoreTextSize = 2131165263;
+			
+			// aapt resource value: 0x7f07004b
+			public const int TaskProgress_DescTextSize = 2131165259;
+			
+			// aapt resource value: 0x7f070050
+			public const int TaskProgress_EndDescTextSize = 2131165264;
 			
 			// aapt resource value: 0x7f070049
-			public const int TaskProgress_TitleTextSize = 2131165257;
+			public const int TaskProgress_MarginBottom = 2131165257;
+			
+			// aapt resource value: 0x7f070048
+			public const int TaskProgress_MarginTop = 2131165256;
+			
+			// aapt resource value: 0x7f07004e
+			public const int TaskProgress_ScoreLayoutHeight = 2131165262;
+			
+			// aapt resource value: 0x7f07004a
+			public const int TaskProgress_TitleTextSize = 2131165258;
 			
 			static Dimension()
 			{
