@@ -109,4 +109,14 @@
     <dimen name="ResultGameButton_Text_Size">18sp</dimen>
     <dimen name="ResultGameList_MarginBotom">10dp</dimen>
     <dimen name="ResultGameList_MarginLeftRight">20dp</dimen>
+
+    <dimen name="ChoosePhotoButton_TextSize">20sp</dimen>
+    <dimen name="ChoosePhotoButton_MarginBottom">10dp</dimen>
+    <dimen name="ChoosePhotoButton_Height">50dp</dimen>
+    <dimen name="ChoosePhotoLayer_Padding">10dp</dimen>
+
+    <dimen name="DialorRating_TextViewSize">20sp</dimen>
+    <dimen name="DialorRatingLayout_MarginTop">120dp</dimen>
+    <dimen name="DialorRatingLayout_MarginRightLeft">40dp</dimen>
+    <dimen name="DialorRatingButton_TextSize">20sp</dimen>
 </resources>

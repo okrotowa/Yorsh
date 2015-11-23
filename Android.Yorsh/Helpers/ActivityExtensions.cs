@@ -27,13 +27,13 @@ namespace Android.Yorsh.Helpers
 
 		public static async Task StubInitialize(this Activity activity)
 		{
-			if (Rep.Instance.Tasks.Any ())
-				return;
-			await activity.CreateDataBaseAsync(10, 10);
-			if (Rep.Instance.Players.Any ())
+			if (Rep.Instance.Players.Count!=0)
 				return;
 			Rep.Instance.Players.Add("Olga", BitmapFactory.DecodeResource(activity.Resources, Resource.Drawable.photo_default), true);
 			Rep.Instance.Players.Add("Marina", BitmapFactory.DecodeResource(activity.Resources, Resource.Drawable.photo_default), true);
+			if (Rep.Instance.Tasks!=null)
+				return;
+			await activity.CreateDataBaseAsync(10, 10);
 		}
 
 		public static Typeface MyriadProFont (this Activity activity, MyriadPro myriadPro)

@@ -121,6 +121,8 @@
     <Compile Include="Adapters\PlayerListAdapter.cs" />
     <Compile Include="Activities\GenericFragmentPagerAdapter.cs" />
     <Compile Include="Activities\Fragments.cs" />
+    <Compile Include="Adapters\MultiItemRowListAdapter.cs" />
+    <Compile Include="Activities\NewGameActivity.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -397,6 +399,10 @@
     <AndroidResource Include="Resources\drawable\rules_three_sroll_page.png" />
     <AndroidResource Include="Resources\drawable\rules_one_page.png" />
     <AndroidResource Include="Resources\drawable\table_list_background.xml" />
+    <AndroidResource Include="Resources\drawable\shop_task_background.xml" />
+    <AndroidResource Include="Resources\layout\StoreTaskItem.axml" />
+    <AndroidResource Include="Resources\layout\DialogRating.axml" />
+    <AndroidResource Include="Resources\layout\WebView.axml" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\MainMenu.axml" />

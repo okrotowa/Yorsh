@@ -2,20 +2,36 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="fill_parent"
-    android:layout_height="fill_parent">
+    android:layout_height="fill_parent"
+    android:gravity="bottom"
+    android:paddingRight="@dimen/ChoosePhotoLayer_Padding"
+    android:paddingLeft="@dimen/ChoosePhotoLayer_Padding"
+    android:paddingBottom="@dimen/ChoosePhotoLayer_Padding">
     <Button
         android:id="@+id/makePhotoButton"
         android:text="@string/MakePhotoString"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="@dimen/ChoosePhotoButton_Height"
+        android:layout_marginBottom="-1dp"
+        android:textSize="@dimen/ChoosePhotoButton_TextSize"
+        android:textColor="#ff039be5"
+        android:background="?android:attr/colorForeground" />
     <Button
         android:id="@+id/choosePhotoButton"
         android:text="@string/ChooseFromGalleryString"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="@dimen/ChoosePhotoButton_Height"
+        android:textSize="@dimen/ChoosePhotoButton_TextSize"
+        android:layout_marginBottom="@dimen/ChoosePhotoButton_MarginBottom"
+        android:textColor="#ff039be5"
+        android:background="?android:attr/colorForeground" />
     <Button
         android:id="@+id/cancelButton"
         android:text="@string/CancelString"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="@dimen/ChoosePhotoButton_Height"
+        android:textSize="@dimen/ChoosePhotoButton_TextSize"
+        android:textColor="#ff039be5"
+        android:textStyle="bold"
+        android:background="?android:attr/colorForeground" />
 </LinearLayout>
