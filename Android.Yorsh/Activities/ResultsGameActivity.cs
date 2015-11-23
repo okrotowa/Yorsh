@@ -16,9 +16,9 @@ namespace Android.Yorsh.Activities
     {
 		protected async override void OnCreate(Bundle bundle)
         {
-            base.OnCreate(bundle);
-            SetContentView(Resource.Layout.ResultsGame);
+			base.OnCreate(bundle);
 			await this.StubInitialize ();
+            SetContentView(Resource.Layout.ResultsGame);
             var isEndGame = Intent.GetBooleanExtra("isEnd", false);
             var listView = FindViewById<ListView>(Resource.Id.playerTournamentListView);
 			var adapter = new ListAdapter(this, isEndGame);
@@ -63,11 +63,11 @@ namespace Android.Yorsh.Activities
 
         private class ListAdapter : BaseAdapter<Player>
         {
-            private readonly Context _context;
+            private readonly Activity _context;
 			bool _isEndGame;
             private readonly IList<Player> _players;
 
-            public ListAdapter(Context context, bool isEndGame)
+            public ListAdapter(Activity context, bool isEndGame)
             {
                 _context = context;
 				_isEndGame = isEndGame;
@@ -81,8 +81,7 @@ namespace Android.Yorsh.Activities
 
             public override View GetView(int position, View convertView, ViewGroup parent)
             {
-                if (convertView != null) return convertView;
-                return SetPlayerView(position);
+				return convertView ?? SetPlayerView (position);
             }
 
             private View SetPlayerView(int position)
@@ -91,13 +90,13 @@ namespace Android.Yorsh.Activities
 				var viewLead = inflater.Inflate (Resource.Layout.FirstPlayerItem, null);
 				var textLead = viewLead.FindViewById<TextView> (Resource.Id.leadText);
 				var textScore = viewLead.FindViewById<TextView> (Resource.Id.scoreText);
-				textLead.SetTypeface (this.Activity.MyriadProFont (MyriadPro.BoldCondensed), Android.Graphics.TypefaceStyle.Normal);
-				textScore.SetTypeface (this.Activity.MyriadProFont (MyriadPro.BoldCondensed), Android.Graphics.TypefaceStyle.Normal);
+				textLead.SetTypeface (_context.MyriadProFont (MyriadPro.BoldCondensed), Android.Graphics.TypefaceStyle.Normal);
+				textScore.SetTypeface (_context.MyriadProFont (MyriadPro.BoldCondensed), Android.Graphics.TypefaceStyle.Normal);
 				var viewPlayerItem = inflater.Inflate (Resource.Layout.PlayerItem, null);
 				var textPlayerItemName = viewPlayerItem.FindViewById<TextView> (Resource.Id.playerName);
 				var textPlayerItemScore = viewPlayerItem.FindViewById<TextView> (Resource.Id.playerScore);
-				textPlayerItemName.SetTypeface (this.Activity.MyriadProFont (MyriadPro.Bold), Android.Graphics.TypefaceStyle.Normal);
-				textPlayerItemScore.SetTypeface (this.Activity.MyriadProFont (MyriadPro.BoldCondensed), Android.Graphics.TypefaceStyle.Normal);
+				textPlayerItemName.SetTypeface (_context.MyriadProFont (MyriadPro.Bold), Android.Graphics.TypefaceStyle.Normal);
+				textPlayerItemScore.SetTypeface (_context.MyriadProFont (MyriadPro.BoldCondensed), Android.Graphics.TypefaceStyle.Normal);
 				var isFirst = position == 0;
                 var view = inflater.Inflate(isFirst
                     ? Resource.Layout.FirstPlayerItem

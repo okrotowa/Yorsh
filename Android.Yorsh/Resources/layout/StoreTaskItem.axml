@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@android:color/background_light">
+    <RelativeLayout
+        android:gravity="center"
+        android:layout_width="80dp"
+        android:layout_height="80dp">
+        <Button
+            android:background="@drawable/icon_top_70"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/taskButton"
+            android:textColor="#110626"
+            android:text="10 штук"
+            android:textSize="8sp"
+            android:layout_centerHorizontal="true" />
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/sale_20" />
+    </RelativeLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/shadow" />
+    <TextView
+        android:text="59 руб."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textButTwo"
+        android:textColor="#110626"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_marginTop="5dp"
+        android:textSize="12sp"
+        android:layout_gravity="center" />
+</LinearLayout>
