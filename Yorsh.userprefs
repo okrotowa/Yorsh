@@ -2,7 +2,7 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.Nexus 5 (Lollipop)" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Android.Yorsh\Activities\NewGameActivity.cs">
     <Files>
-      <File FileName="Android.Yorsh\Activities\NewGameActivity.cs" Line="26" Column="12" />
+      <File FileName="Android.Yorsh\Activities\NewGameActivity.cs" Line="33" Column="4" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

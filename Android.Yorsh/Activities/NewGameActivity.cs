@@ -38,7 +38,7 @@ namespace Android.Yorsh
 			buttonEasy.Click += (object sender, EventArgs e) => {
 				SetContentView(Resource.Layout.WebView);
 
-				string url = "http://vk.com";
+				string url = "https://itunes.apple.com/ua/app/ers/id604886527?mt=8";
 				var web = FindViewById<WebView>(Resource.Id.webView1);
 
 				web.Settings.JavaScriptEnabled = true;
