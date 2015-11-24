@@ -114,4 +114,8 @@
     <dimen name="DialorRatingLayout_MarginTop">250dp</dimen>
     <dimen name="DialorRatingLayout_MarginRightLeft">50dp</dimen>
     <dimen name="DialorRatingButton_TextSize">25sp</dimen>
+
+    <dimen name="PickPlayerDialog_TextView_Height">70dp</dimen>
+    <dimen name="PickPlayerDialog_TextView_Size">25sp</dimen>
+    <dimen name="PickPlayerDialog_ListView_MarginS">30dp</dimen>
 </resources>

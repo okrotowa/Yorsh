@@ -2,15 +2,26 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="fill_parent"
-    android:layout_height="fill_parent">
+    android:layout_height="fill_parent"
+    android:background="@drawable/game_background">
     <TextView
         android:orientation="horizontal"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/PickPlayerString" />
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/PickPlayerDialog_TextView_Height"
+        android:text="@string/PickPlayerString"
+        android:textStyle="bold"
+        android:textSize="@dimen/PickPlayerDialog_TextView_Size"
+        android:layout_gravity="center"
+        android:scrollHorizontally="true"
+        android:textColor="@color/black"
+        android:background="?android:attr/colorForeground"
+        android:textAlignment="center"
+        android:gravity="center" />
     <ListView
         android:orientation="horizontal"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:id="@+id/playerPickList" />
+        android:id="@+id/playerPickList"
+        android:background="?android:attr/colorForeground"
+        android:layout_margin="@dimen/PickPlayerDialog_ListView_MarginS" />
 </LinearLayout>

@@ -381,6 +381,15 @@ namespace Android.Yorsh
 			// aapt resource value: 0x7f07000c
 			public const int MainMenu_startButtonWidth = 2131165196;
 			
+			// aapt resource value: 0x7f07006c
+			public const int PickPlayerDialog_ListView_MarginS = 2131165292;
+			
+			// aapt resource value: 0x7f07006a
+			public const int PickPlayerDialog_TextView_Height = 2131165290;
+			
+			// aapt resource value: 0x7f07006b
+			public const int PickPlayerDialog_TextView_Size = 2131165291;
+			
 			// aapt resource value: 0x7f07005c
 			public const int PlayerLeadText_Size = 2131165276;
 			
