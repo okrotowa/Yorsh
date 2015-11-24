@@ -28,8 +28,6 @@ namespace Android.Yorsh.Activities
 		TextView _points;
 		TextView _x2;
 
-
-
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
