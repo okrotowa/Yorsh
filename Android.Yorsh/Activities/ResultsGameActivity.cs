@@ -18,7 +18,7 @@ namespace Android.Yorsh.Activities
         {
 			base.OnCreate(bundle);
 			await this.StubInitialize ();
-            SetContentView(Resource.Layout.ResultsGame);
+			SetContentView(Resource.Layout.ResultsGame);
             var isEndGame = Intent.GetBooleanExtra("isEnd", false);
             var listView = FindViewById<ListView>(Resource.Id.playerTournamentListView);
 			var adapter = new ListAdapter(this, isEndGame);
@@ -95,8 +95,8 @@ namespace Android.Yorsh.Activities
 				var viewPlayerItem = inflater.Inflate (Resource.Layout.PlayerItem, null);
 				var textPlayerItemName = viewPlayerItem.FindViewById<TextView> (Resource.Id.playerName);
 				var textPlayerItemScore = viewPlayerItem.FindViewById<TextView> (Resource.Id.playerScore);
-				textPlayerItemName.SetTypeface (_context.MyriadProFont (MyriadPro.Bold), Android.Graphics.TypefaceStyle.Normal);
-				textPlayerItemScore.SetTypeface (_context.MyriadProFont (MyriadPro.BoldCondensed), Android.Graphics.TypefaceStyle.Normal);
+				textPlayerItemName.SetTypeface (_context.MyriadProFont (MyriadPro.Condensed), Android.Graphics.TypefaceStyle.Normal);
+				textPlayerItemScore.SetTypeface (_context.MyriadProFont (MyriadPro.BoldCondensed), Android.Graphics.TypefaceStyle.Bold);
 				var isFirst = position == 0;
                 var view = inflater.Inflate(isFirst
                     ? Resource.Layout.FirstPlayerItem
@@ -104,6 +104,8 @@ namespace Android.Yorsh.Activities
                 var imageView = view.FindViewById<ImageView>(Resource.Id.playerImage);
                 var playerName = view.FindViewById<TextView>(Resource.Id.playerName);
                 var playerScore = view.FindViewById<TextView>(Resource.Id.playerScore);
+				playerName.SetTypeface (_context.MyriadProFont (MyriadPro.Condensed), Android.Graphics.TypefaceStyle.Normal);
+				playerScore.SetTypeface (_context.MyriadProFont (MyriadPro.BoldCondensed), Android.Graphics.TypefaceStyle.Bold);
 				SetLeadString (isFirst, view);
 				imageView.SetImageBitmap(this[position].Photo);
 				playerName.Text = this[position].Name;

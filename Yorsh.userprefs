@@ -1,6 +1,10 @@
 ﻿<Properties StartupItem="Android.Yorsh\Android.Yorsh.csproj">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.Nexus 5 (Lollipop)" />
-  <MonoDevelop.Ide.Workbench />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.Nexus S (KitKat)" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Android.Yorsh\Activities\ResultsGameActivity.cs">
+    <Files>
+      <File FileName="Android.Yorsh\Activities\ResultsGameActivity.cs" Line="98" Column="80" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
       <Breakpoint file="C:\Users\paliy\Documents\Projects\Yorsh\Android.Yorsh\Helpers\ActivityExtensions.cs" line="30" column="1" />

@@ -32,14 +32,15 @@
             android:id="@+id/leadText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="ВЕДЕТ: "
+            android:text="ВЕДЕТ  "
             android:textColor="@color/name_black"
-            android:textSize="@dimen/PlayerLeadText_Size" />
+            android:textSize="@dimen/PlayerNameText_Size" />
         <TextView
             android:id="@+id/playerName"
             android:textColor="@color/bonus_green"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/PlayerNameText_Size" />
     </LinearLayout>
     <LinearLayout
         android:layout_width="wrap_content"
@@ -52,12 +53,15 @@
             android:layout_height="wrap_content"
             android:textColor="@color/bonus_blue"
             android:text="БАЛОВ: "
-            android:textSize="@dimen/PlayerLeadText_Size" />
+            android:textSize="@dimen/PlayerLeadText_Size"
+            android:textStyle="bold" />
         <TextView
             android:layout_gravity="center_horizontal"
             android:id="@+id/playerScore"
             android:textColor="@color/bonus_blue"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/PlayerLeadText_Size"
+            android:textStyle="bold" />
     </LinearLayout>
 </LinearLayout>
