@@ -12,13 +12,28 @@ namespace Android.Yorsh.Fragments
 {
     public class ChoosePhotoDialog : DialogFragment
     {
+		
+		public override Dialog OnCreateDialog (Bundle savedInstanceState)
+		{
+			var dialog =  base.OnCreateDialog (savedInstanceState);
+			dialog.Window.RequestFeature (WindowFeatures.NoTitle);
+			dialog.Window.SetFlags(WindowManagerFlags.ForceNotFullscreen, WindowManagerFlags.ForceNotFullscreen); 
+			dialog.Window.SetBackgroundDrawableResource (Android.Resource.Color.Transparent);
+			dialog.Window.SetGravity (GravityFlags.CenterHorizontal);
+			var param = dialog.Window.Attributes;
+			param.Width = ViewGroup.LayoutParams.MatchParent;
+			dialog.Window.Attributes = param;
+			return dialog;
+		}
+
         public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
-        {
+        {			
             var view = inflater.Inflate(Resource.Layout.ChoosePhoto, container, false);
             view.FindViewById<Button>(Resource.Id.makePhotoButton).Click += MakePhoto_Click;
             view.FindViewById<Button>(Resource.Id.choosePhotoButton).Click += ChoosePhoto_Click;
             view.FindViewById<Button>(Resource.Id.cancelButton).Click += delegate { Dismiss(); };
             return view;
+
         }
 
         private void ChoosePhoto_Click(object sender, EventArgs e)

@@ -1,13 +1,10 @@
 ﻿<Properties StartupItem="Android.Yorsh\Android.Yorsh.csproj">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.Nexus 5 (Lollipop)" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Android.Yorsh\Activities\NewGameActivity.cs">
-    <Files>
-      <File FileName="Android.Yorsh\Activities\NewGameActivity.cs" Line="33" Column="4" />
-    </Files>
-  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.Nexus 10 (KitKat) - API 19 - 1600x2560" />
+  <MonoDevelop.Ide.Workbench />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
       <Breakpoint file="C:\Users\paliy\Documents\Projects\Yorsh\Android.Yorsh\Helpers\ActivityExtensions.cs" line="30" column="1" />
+      <Breakpoint file="E:\Fionariza\Programming\Work\Android.Yorsh\Android.Yorsh\Fragments\ChoosePhotoDialog.cs" line="18" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />

@@ -101,7 +101,7 @@
     <dimen name="PlayerLeadText_Size">30sp</dimen>
     <dimen name="PlayerNameText_Size">27sp</dimen>
     <dimen name="PlayerScoreText_Size">30sp</dimen>
-    <dimen name="ResultGameButton_Text_Size">25sp</dimen>
+    <dimen name="ResultGameButton_Text_Size">26sp</dimen>
     <dimen name="ResultGameList_MarginBotom">10dp</dimen>
     <dimen name="ResultGameList_MarginLeftRight">35dp</dimen>
 
