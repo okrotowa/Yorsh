@@ -9,7 +9,7 @@ using Object = Java.Lang.Object;
 
 namespace ClickPizza.Android.Adapters
 {
-    public class MultiItemRowListAdapter :  Object,IWrapperListAdapter
+    public class MultiItemRowListAdapter :  Object, IWrapperListAdapter
     {
             private readonly IListAdapter _adapter;
             private readonly int _itemsPerRow;
