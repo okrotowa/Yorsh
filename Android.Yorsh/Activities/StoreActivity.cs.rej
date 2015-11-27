@@ -1,0 +1,9 @@
+diff a/Android.Yorsh/Activities/StoreActivity.cs b/Android.Yorsh/Activities/StoreActivity.cs	(rejected hunks)
+@@ -4,6 +4,7 @@
+ using Android.Widget;
+ using ClickPizza.Android.Adapters;
+ using Xamarin.InAppBilling;
++using System;
+ 
+ namespace Android.Yorsh.Activities
+ {
