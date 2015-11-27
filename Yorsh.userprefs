@@ -1,10 +1,28 @@
-﻿<Properties StartupItem="Android.Yorsh\Android.Yorsh.csproj">
+﻿<Properties StartupItem="Android.Yorsh\Android.Yorsh.csproj" RefactoringSettings.EnableRefactorings="True">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.Nexus 10 (KitKat) - API 19 - 1600x2560" />
-  <MonoDevelop.Ide.Workbench />
+  <MonoDevelop.Ide.Workbench>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="InAppBillingTesting" expanded="True">
+            <Node name="InAppBillingTest" expanded="True" />
+          </Node>
+          <Node name="Yorsh" expanded="True">
+            <Node name="Android.Yorsh" expanded="True">
+              <Node name="Activities" expanded="True">
+                <Node name="StoreActivity.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
       <Breakpoint file="C:\Users\paliy\Documents\Projects\Yorsh\Android.Yorsh\Helpers\ActivityExtensions.cs" line="30" column="1" />
       <Breakpoint file="E:\Fionariza\Programming\Work\Android.Yorsh\Android.Yorsh\Fragments\ChoosePhotoDialog.cs" line="18" column="1" />
+      <Breakpoint file="E:\Fionariza\Programming\Work\Android.Yorsh\Android.Yorsh\Activities\StoreActivity.cs" line="12" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
