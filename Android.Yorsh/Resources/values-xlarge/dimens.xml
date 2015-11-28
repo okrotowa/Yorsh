@@ -25,8 +25,8 @@
     <dimen name="AddPlayerItem_paddingTop">20dp</dimen>
     <dimen name="AddPlayerItem_imageSize">100dp</dimen>
     <dimen name="AddPlayerItem_removeLayoutSize">50dp</dimen>
-    <dimen name="AddPlayerItem_nameTextSize">26sp</dimen>
-    <dimen name="AddPlayerItem_isPlayTextSize">23sp</dimen>
+    <dimen name="AddPlayerItem_nameTextSize">28sp</dimen>
+    <dimen name="AddPlayerItem_isPlayTextSize">25sp</dimen>
 
     <dimen name="AddNewPlayers_editTextSize">35sp</dimen>
     <dimen name="AddNewPlayers_buttonTextSize">47sp</dimen>
@@ -98,7 +98,7 @@
     <dimen name="RuleFragment_HeaderTextMarginTopBottom">7dp</dimen>
     <dimen name="RuleFragment_ContainerTextSize">32sp</dimen>
 
-    <dimen name="PlayerLeadText_Size">40sp</dimen>
+    <dimen name="PlayerLeadText_Size">38sp</dimen>
     <dimen name="PlayerNameText_Size">35sp</dimen>
     <dimen name="PlayerScoreText_Size">40sp</dimen>
     <dimen name="ResultGameButton_Text_Size">40sp</dimen>
@@ -118,4 +118,7 @@
     <dimen name="PickPlayerDialog_TextView_Height">80dp</dimen>
     <dimen name="PickPlayerDialog_TextView_Size">33sp</dimen>
     <dimen name="PickPlayerDialog_ListView_MarginS">35dp</dimen>
+
+    <dimen name="FirstPlayerItem_ImageSize">120dp</dimen>
+    <dimen name="FirstPalyerItem_HalfImageSize">80dp</dimen>
 </resources>

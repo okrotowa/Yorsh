@@ -34,7 +34,7 @@
     <dimen name="AddPlayerItem_isPlayTextSize">18sp</dimen>
 
     <dimen name="AddNewPlayers_editTextSize">18sp</dimen>
-    <dimen name="AddNewPlayers_buttonTextSize">22sp</dimen>
+    <dimen name="AddNewPlayers_buttonTextSize">18sp</dimen>
     <dimen name="AddNewPlayers_imageSize">60dp</dimen>
     <dimen name="AddNewPlayers_buttonHeight">50dp</dimen>
     <dimen name="AddNewPlayers_buttonWidth">50dp</dimen>
@@ -83,7 +83,7 @@
     <dimen name="TaskProgress_MarginTop">100dp</dimen>
     <dimen name="TaskProgress_MarginBottom">20dp</dimen>
     <dimen name="TaskProgress_TitleTextSize">32sp</dimen>
-    <dimen name="TaskProgress_DescTextSize">20sp</dimen>
+    <dimen name="TaskProgress_DescTextSize">16sp</dimen>
     <dimen name="TaskProgress_ContinueButtonHeight">42dp</dimen>
     <dimen name="TaskProgress_ContinueButtonWidth">120dp</dimen>
     <dimen name="TaskProgress_ScoreLayoutHeight">100dp</dimen>

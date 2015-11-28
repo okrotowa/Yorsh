@@ -118,4 +118,7 @@
     <dimen name="PickPlayerDialog_TextView_Height">70dp</dimen>
     <dimen name="PickPlayerDialog_TextView_Size">25sp</dimen>
     <dimen name="PickPlayerDialog_ListView_MarginS">30dp</dimen>
+
+    <dimen name="FirstPlayerItem_ImageSize">100dp</dimen>
+    <dimen name="FirstPalyerItem_HalfImageSize">60dp</dimen>
 </resources>

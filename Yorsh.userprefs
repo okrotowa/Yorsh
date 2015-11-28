@@ -1,9 +1,23 @@
 ﻿<Properties StartupItem="Android.Yorsh\Android.Yorsh.csproj">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.Nexus S (KitKat)" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Android.Yorsh\Activities\ResultsGameActivity.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x64" PreferredExecutionTarget="Android.Nexus S (KitKat)" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Android.Yorsh\Helpers\TaskDialogBuilder.cs">
     <Files>
-      <File FileName="Android.Yorsh\Activities\ResultsGameActivity.cs" Line="98" Column="80" />
+      <File FileName="c:\Users\paliy\Documents\Projects\Yorsh\Android.Yorsh\Activities\Fragments.cs" Line="1" Column="1" />
+      <File FileName="Android.Yorsh\Helpers\TaskDialogBuilder.cs" Line="21" Column="77" />
     </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Yorsh" expanded="True">
+            <Node name="Android.Yorsh" expanded="True" selected="True">
+              <Node name="Activities" expanded="True" />
+              <Node name="Helpers" expanded="True" />
+              <Node name="Resources" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
@@ -11,5 +25,5 @@
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.Android.Yorsh AndroidDesignerPreferredDevice="Nexus 4" />
+  <MonoDevelop.Ide.ItemProperties.Android.Yorsh AndroidDesignerPreferredDevice="Nexus 10" />
 </Properties>
