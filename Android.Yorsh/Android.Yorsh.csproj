@@ -74,6 +74,9 @@
     <Reference Include="Xamarin.Android.Support.v4">
       <HintPath>..\Components\xamandroidsupportv4-18-4.19.0.1\lib\android\Xamarin.Android.Support.v4.dll</HintPath>
     </Reference>
+    <Reference Include="Xamarin.InAppBilling">
+      <HintPath>..\Components\xamarin.inappbilling-2.2\lib\android\Xamarin.InAppBilling.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Activities\AddNewPlayerActivity.cs" />
@@ -90,6 +93,7 @@
     <Compile Include="Fragments\GameFragment.cs" />
     <Compile Include="Fragments\ImageFragment.cs" />
     <Compile Include="Fragments\PickPlayerDialog.cs" />
+    <Compile Include="Fragments\ShareFragment.cs" />
     <Compile Include="Fragments\TaskProgressDialog.cs" />
     <Compile Include="Helpers\ActivityExtensions.cs" />
     <Compile Include="Helpers\BearTask.cs" />
@@ -122,7 +126,7 @@
     <Compile Include="Activities\GenericFragmentPagerAdapter.cs" />
     <Compile Include="Activities\Fragments.cs" />
     <Compile Include="Adapters\MultiItemRowListAdapter.cs" />
-    <Compile Include="Activities\NewGameActivity.cs" />
+    <Compile Include="Fragments\DialogRatingFragment.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -237,9 +241,6 @@
     <AndroidResource Include="Resources\drawable-xxxhdpi\delete_button.png" />
     <AndroidResource Include="Resources\drawable\delete_button.png" />
     <AndroidResource Include="Resources\drawable\start_new_game_button.png" />
-    <AndroidResource Include="Resources\values\strings.xml">
-      <SubType>Designer</SubType>
-    </AndroidResource>
     <AndroidResource Include="Resources\drawable\photo_default.png" />
     <AndroidResource Include="Resources\drawable\round_rect_shape_white_border.xml" />
     <AndroidResource Include="Resources\drawable\choose_from_contacts.png" />
@@ -268,10 +269,6 @@
     <AndroidResource Include="Resources\drawable-hdpi\cancel_button.png" />
     <AndroidResource Include="Resources\drawable-nodpi\game_background.png" />
     <AndroidAsset Include="Assets\BankirRetro.ttf" />
-    <AndroidResource Include="Resources\values\dimens.xml" />
-    <AndroidResource Include="Resources\values-large\dimens.xml" />
-    <AndroidResource Include="Resources\values-xlarge\dimens.xml" />
-    <AndroidResource Include="Resources\values\colors.xml" />
     <AndroidResource Include="Resources\drawable-nodpi\card_backside.jpg" />
     <AndroidAsset Include="Assets\MyriadProCondensed.ttf" />
     <AndroidResource Include="Resources\drawable\back_button_pressed.xml" />
@@ -373,7 +370,6 @@
     <AndroidResource Include="Resources\drawable-xxhdpi\continue_button.png" />
     <AndroidResource Include="Resources\drawable-xxxhdpi\continue_button.png" />
     <AndroidAsset Include="Assets\MyriadProSemiboldCond.otf" />
-    <AndroidResource Include="Resources\values\arrays.xml" />
     <AndroidAsset Include="Assets\MyriadProLightCond.otf" />
     <AndroidResource Include="Resources\drawable\taskprogress_background.xml" />
     <AndroidResource Include="Resources\drawable\ready_label_enable.xml" />
@@ -403,6 +399,20 @@
     <AndroidResource Include="Resources\layout\StoreTaskItem.axml" />
     <AndroidResource Include="Resources\layout\DialogRating.axml" />
     <AndroidResource Include="Resources\layout\WebView.axml" />
+    <AndroidResource Include="Resources\values-large\dimens.xml" />
+    <AndroidResource Include="Resources\values\arrays.xml" />
+    <AndroidResource Include="Resources\values\colors.xml" />
+    <AndroidResource Include="Resources\values\dimens.xml" />
+    <AndroidResource Include="Resources\values\strings.xml" />
+    <AndroidResource Include="Resources\values\styles.xml" />
+    <AndroidResource Include="Resources\values-xlarge\dimens.xml" />
+    <AndroidResource Include="Resources\layout\ShareSoc.axml" />
+    <AndroidResource Include="Resources\drawable\fbicon.png" />
+    <AndroidResource Include="Resources\drawable\twicon.png" />
+    <AndroidResource Include="Resources\drawable\vk.png" />
+    <AndroidResource Include="Resources\drawable\fb72.png" />
+    <AndroidResource Include="Resources\drawable\tw72.png" />
+    <AndroidResource Include="Resources\drawable\vk72.png" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\MainMenu.axml" />
@@ -445,26 +455,13 @@
       <DeployService-Deploy>True</DeployService-Deploy>
     </Content>
     <AndroidResource Include="Resources\drawable\back_button.png" />
-    <AndroidResource Include="Resources\values\styles.xml">
-      <SubType>Designer</SubType>
-    </AndroidResource>
     <AndroidResource Include="Resources\drawable\add_player_button.xml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Adapters\" />
     <Folder Include="Data\" />
-    <Folder Include="Resources\drawable-hdpi\" />
-    <Folder Include="Resources\drawable-mdpi\" />
-    <Folder Include="Resources\drawable-xxhdpi\" />
-    <Folder Include="Resources\drawable-xxxhdpi\" />
-    <Folder Include="Resources\drawable-xhdpi\" />
-    <Folder Include="Resources\drawable-ldpi\" />
     <Folder Include="Resources\menu\" />
-    <Folder Include="Resources\values-large\" />
-    <Folder Include="Resources\drawable-nodpi\" />
-    <Folder Include="Resources\values-xlarge\" />
   </ItemGroup>
   <ItemGroup>
     <XamarinComponentReference Include="sqlite-net">
@@ -477,6 +474,10 @@
     </XamarinComponentReference>
     <XamarinComponentReference Include="xamandroidsupportv4-18">
       <Version>4.19.0.1</Version>
+      <Visible>False</Visible>
+    </XamarinComponentReference>
+    <XamarinComponentReference Include="xamarin.inappbilling">
+      <Version>2.2</Version>
       <Visible>False</Visible>
     </XamarinComponentReference>
   </ItemGroup>

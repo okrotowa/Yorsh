@@ -1,9 +1,0 @@
-diff a/Android.Yorsh/Resources/values/dimens.xml b/Android.Yorsh/Resources/values/dimens.xml	(rejected hunks)
-@@ -100,6 +100,7 @@
- +    <dimen name="RuleFragment_HeaderTextMarginTopBottom">7dp</dimen>
- +    <dimen name="RuleFragment_ContainerTextSize">13sp</dimen>
- +
-++=======
-      <dimen name="ResultsGame_HalfImageHeight">40dp</dimen>
-      <dimen name="ResultsGame_ImageSize">80dp</dimen>
- +>>>>>>> Improve ResultsPage design and interaction

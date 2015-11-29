@@ -1,56 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
-    <LinearLayout
-        android:orientation="vertical"
-        android:minWidth="25px"
-        android:minHeight="25px"
+    android:minWidth="25px"
+    android:minHeight="25px"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/linearLayout1"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:layout_marginRight="@dimen/DialorRatingLayout_MarginRightLeft"
+    android:layout_marginLeft="@dimen/DialorRatingLayout_MarginRightLeft"
+    android:background="@color/white">
+    <TextView
+        android:text="ОЦЕНИТЕ НАС"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/linearLayout1"
-        android:layout_gravity="center"
-        android:layout_marginTop="@dimen/DialorRatingLayout_MarginTop"
-        android:layout_marginRight="@dimen/DialorRatingLayout_MarginRightLeft"
-        android:layout_marginLeft="@dimen/DialorRatingLayout_MarginRightLeft">
-        <TextView
-            android:text="ОЦЕНИ НАС"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/textView1"
-            android:textAlignment="center"
-            android:layout_gravity="center"
-            android:scrollHorizontally="true"
-            android:textSize="@dimen/DialorRating_TextViewSize"
-            android:textColor="#ff039be5"
-            android:textStyle="bold" />
-        <Button
-            android:text="ЛЕГКО"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/buttonEasy"
-            android:background="?android:attr/colorForeground"
-            android:textColor="#ff039be5"
-            android:layout_marginTop="15dp"
-            android:layout_marginBottom="2dp"
-            android:textSize="@dimen/DialorRatingButton_TextSize" />
-        <Button
-            android:text="ПОТОМ"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/buttonYester"
-            android:background="?android:attr/colorForeground"
-            android:textColor="#ff039be5"
-            android:layout_marginBottom="2dp"
-            android:textSize="@dimen/DialorRatingButton_TextSize" />
-        <Button
-            android:text="НЕА"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/buttonNo"
-            android:background="?android:attr/colorForeground"
-            android:textColor="#ff039be5"
-            android:textSize="@dimen/DialorRatingButton_TextSize" />
-    </LinearLayout>
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"
+        android:id="@+id/textView1"
+        android:textColor="#ff039be5"
+        android:gravity="center"
+        android:textSize="@dimen/DialorRatingButton_TextSize"
+        android:textStyle="bold" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="#ff039be5" />
+    <Button
+        android:text="ЛЕГКО"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DialorRatingButton_Height"
+        android:id="@+id/buttonEasy"
+        android:background="?android:attr/colorForeground"
+        android:textColor="#ff039be5"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:textSize="@dimen/DialorRatingButton_TextSize" />
+    <Button
+        android:text="ПОТОМ"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DialorRatingButton_Height"
+        android:id="@+id/buttonYester"
+        android:background="?android:attr/colorForeground"
+        android:textColor="#ff039be5"
+        android:layout_marginBottom="2dp"
+        android:textSize="@dimen/DialorRatingButton_TextSize" />
+    <Button
+        android:text="НЕА"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DialorRatingButton_Height"
+        android:id="@+id/buttonNo"
+        android:background="?android:attr/colorForeground"
+        android:textColor="#ff039be5"
+        android:textSize="@dimen/DialorRatingButton_TextSize" />
 </LinearLayout>

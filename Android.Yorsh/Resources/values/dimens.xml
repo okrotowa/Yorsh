@@ -106,7 +106,7 @@
     <dimen name="PlayerLeadText_Size">18sp</dimen>
     <dimen name="PlayerNameText_Size">15sp</dimen>
     <dimen name="PlayerScoreText_Size">20sp</dimen>
-    <dimen name="ResultGameButton_Text_Size">18sp</dimen>
+    <dimen name="ResultGameButton_Text_Size">22sp</dimen>
     <dimen name="ResultGameList_MarginBotom">10dp</dimen>
     <dimen name="ResultGameList_MarginLeftRight">20dp</dimen>
 
@@ -119,6 +119,7 @@
     <dimen name="DialorRatingLayout_MarginTop">120dp</dimen>
     <dimen name="DialorRatingLayout_MarginRightLeft">40dp</dimen>
     <dimen name="DialorRatingButton_TextSize">20sp</dimen>
+    <dimen name="DialorRatingButton_Height">50dp</dimen>
 
     <dimen name="PickPlayerDialog_TextView_Height">40dp</dimen>
     <dimen name="PickPlayerDialog_TextView_Size">18sp</dimen>

@@ -6,6 +6,7 @@ using Android.Content.PM;
 using Android.OS;
 using Android.Views;
 using Android.Widget;
+using Android.Yorsh.Fragments;
 using Android.Yorsh.Helpers;
 using Android.Yorsh.Model;
 
@@ -50,15 +51,30 @@ namespace Android.Yorsh.Activities
 			FindViewById<RelativeLayout> (Resource.Id.relativeLayout).Visibility = ViewStates.Visible;
 			this.ActionBar.Show ();
 			var completeGameButton = FindViewById<Button> (Resource.Id.completeGameButton);
-			completeGameButton.Touch+=(sender, e)=>this.OnTouchButtonDarker(completeGameButton, e);
+			//completeGameButton.Touch+=(sender, e)=>this.OnTouchButtonDarker(completeGameButton, e);
 			completeGameButton.SetTypeface (this.MyriadProFont (MyriadPro.BoldCondensed), Android.Graphics.TypefaceStyle.Normal);
 			completeGameButton.Click+= delegate {
-				Intent.PutExtra("isEnd",true);
+                var preferences = GetPreferences(FileCreationMode.Private);
+			    var isShow = preferences.GetBoolean("isShow", true);
+			    if (isShow){
+			        var fragmentTransaction = FragmentManager.BeginTransaction();
+			        var prev = (DialogFragment) FragmentManager.FindFragmentByTag("rating");
+		            var dialog = prev ?? new DialogRatingFragment() {ShowsDialog = true};
+			        dialog.Show(fragmentTransaction, "rating");
+			        }
+			    Intent.PutExtra("isEnd",true);
 				this.Recreate();
 			};
 			var shareButton = FindViewById<Button> (Resource.Id.shareButton);
 			shareButton.Touch+=(sender, e)=>this.OnTouchButtonDarker(shareButton, e);
 			shareButton.SetTypeface (this.MyriadProFont (MyriadPro.BoldCondensed), Android.Graphics.TypefaceStyle.Normal);
+		    shareButton.Click += delegate
+		        {
+		            var fragmentTrans = FragmentManager.BeginTransaction();
+                    var prev = (DialogFragment)FragmentManager.FindFragmentByTag("share");
+                    var dialogShare = prev ?? new ShareFragment() { ShowsDialog = true };
+                    dialogShare.Show(fragmentTrans, "share");
+		        };
 		}
 
         private class ListAdapter : BaseAdapter<Player>
@@ -104,7 +120,7 @@ namespace Android.Yorsh.Activities
                 var imageView = view.FindViewById<ImageView>(Resource.Id.playerImage);
                 var playerName = view.FindViewById<TextView>(Resource.Id.playerName);
                 var playerScore = view.FindViewById<TextView>(Resource.Id.playerScore);
-				playerName.SetTypeface (_context.MyriadProFont (MyriadPro.Condensed), Android.Graphics.TypefaceStyle.Normal);
+				playerName.SetTypeface (_context.MyriadProFont (MyriadPro.BoldCondensed), Android.Graphics.TypefaceStyle.Bold);
 				playerScore.SetTypeface (_context.MyriadProFont (MyriadPro.BoldCondensed), Android.Graphics.TypefaceStyle.Bold);
 				SetLeadString (isFirst, view);
 				imageView.SetImageBitmap(this[position].Photo);
